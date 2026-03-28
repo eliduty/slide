@@ -1,0 +1,14 @@
+{
+  "name": "theme-shared",
+  "version": "0.0.1",
+  "description": "Slide 共享主题包",
+  "main": "index.ts",
+  "slidev": {
+    "colorSchema": "auto"
+  },
+  "files": [
+    "layouts",
+    "components",
+    "styles"
+  ]
+}

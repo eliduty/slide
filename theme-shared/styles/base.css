@@ -1,0 +1,24 @@
+/* Base styles for shared theme */
+
+:root {
+  --slidev-theme-primary: #5d8392;
+  --slidev-theme-secondary: #4a6b7c;
+}
+
+/* Typography */
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+/* Code blocks */
+pre {
+  border-radius: 8px;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}
