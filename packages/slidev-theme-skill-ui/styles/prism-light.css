@@ -1,0 +1,67 @@
+/**
+ * Prism Light Theme - Based on brand colors
+ */
+
+:root {
+  --prism-font-family: var(--font-family-code);
+  --prism-background: var(--color-bg-card);
+  --prism-foreground: #1A1A2E;
+
+  /* 关键字 - 品牌色 */
+  --prism-keyword: #4361EE;
+  --prism-boolean: #22C55E;
+
+  /* 字符串 */
+  --prism-string: #B56959;
+  --prism-char: #B56959;
+
+  /* 数字 */
+  --prism-number: #296AA3;
+
+  /* 函数 */
+  --prism-function: #6C7834;
+  --prism-builtin: #AB5959;
+
+  /* 类/类型 */
+  --prism-class: #2993A3;
+  --prism-constant: #A65E2B;
+
+  /* 变量/属性 */
+  --prism-variable: #6B7280;
+  --prism-property: #B58451;
+
+  /* 注释 */
+  --prism-comment: #A0ADA0;
+
+  /* 标点 */
+  --prism-punctuation: #8E8F8B;
+
+  /* 运算符 */
+  --prism-operator: #1A1A2E;
+
+  /* 删除/插入 */
+  --prism-deleted: #EF4444;
+  --prism-inserted: #22C55E;
+
+  /* 选择器 */
+  --prism-selector: #4361EE;
+
+  /* 正则 */
+  --prism-regex: #AB5E3F;
+
+  /* 命名空间 */
+  --prism-namespace: #B05A78;
+
+  /* 装饰器 */
+  --prism-decorator: #BD8F8F;
+
+  /* 行号 */
+  --prism-line-number: #A0ADA0;
+  --prism-line-number-gutter: var(--color-bg-page);
+
+  /* 高亮行 */
+  --prism-line-highlight-background: #EEF1FD;
+
+  /* 选择背景 */
+  --prism-selection-background: #EEF1FD;
+}

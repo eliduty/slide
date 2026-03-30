@@ -6,7 +6,10 @@
   "scripts": {
     "dev:template": "cd presentations/_template && slidev",
     "build:template": "cd presentations/_template && slidev build",
-    "export:template": "cd presentations/_template && slidev export"
+    "export:template": "cd presentations/_template && slidev export",
+    "dev:ai-coding": "cd presentations/ai-coding && slidev",
+    "build:ai-coding": "cd presentations/ai-coding && slidev build",
+    "export:ai-coding": "cd presentations/ai-coding && slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.50.0",

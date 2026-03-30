@@ -1,3 +1,9 @@
+## REMOVED Requirements
+
+### Requirement: Shared theme directory
+**Reason**: 目录迁移至 `packages/slidev-theme-skill-ui/`，采用可发布的 npm 包结构。
+**Migration**: 使用新的主题包路径 `packages/slidev-theme-skill-ui/`，演示项目需更新 `theme` 引用路径。
+
 ## ADDED Requirements
 
 ### Requirement: Theme package structure
@@ -22,7 +28,7 @@
 
 #### Scenario: Layout files available
 - **WHEN** 查看主题包 `layouts/` 目录
-- **THEN** SHALL 包含 Cover.vue、Default.vue、Section.vue、TopTitle.vue、SideTitle.vue、TwoCols.vue、TopTitleTwoCols.vue、Full.vue、Quote.vue、Credits.vue 布局文件
+- **THEN** SHALL 包含 Cover.vue、Default.vue、Section.vue 等布局文件
 
 ### Requirement: Theme components directory
 主题包 SHALL 包含 `components/` 目录存放 Vue 组件。
@@ -33,7 +39,7 @@
 
 #### Scenario: Component files available
 - **WHEN** 查看主题包 `components/` 目录
-- **THEN** SHALL 包含 CodeBlock.vue、Admonition.vue、Badge.vue、QRCode.vue 组件文件
+- **THEN** SHALL 包含 CodeBlock.vue、Admonition.vue 等组件文件
 
 ### Requirement: Theme styles directory
 主题包 SHALL 包含 `styles/` 目录存放全局样式。
@@ -44,22 +50,7 @@
 
 #### Scenario: Style files available
 - **WHEN** 查看主题包 `styles/` 目录
-- **THEN** SHALL 包含 `variables.css`（Token 定义）、`base.css`、`typography.css`、`layouts.css`、`code.css`、`prism-light.css`、`prism-dark.css` 文件
-
-### Requirement: Theme tokens defined
-主题包 SHALL 定义完整的设计 Token 系统。
-
-#### Scenario: Color tokens available
-- **WHEN** 主题被加载
-- **THEN** CSS 变量 `--color-primary`、`--color-text-primary`、`--color-bg-page` 等 SHALL 可用
-
-#### Scenario: Font size tokens available
-- **WHEN** 主题被加载
-- **THEN** CSS 变量 `--font-size-cover-title`、`--font-size-page-title`、`--font-size-body` 等 SHALL 可用
-
-#### Scenario: Dark theme tokens
-- **WHEN** HTML 元素有 `.dark` 类
-- **THEN** 中性色 Token SHALL 自动切换为暗色值
+- **THEN** SHALL 包含 `variables.css`（Token 定义）、`base.css`、`layouts.css`、`code.css` 等文件
 
 ### Requirement: Presentation references theme package
 演示项目 SHALL 在 frontmatter 中引用主题包。

@@ -1,6 +1,6 @@
 ---
 # Slidev 标准配置
-theme: ../../theme-shared
+theme: ../../packages/slidev-theme-skill-ui
 title: 演示标题
 author: eliduty
 aspectRatio: 16/9
@@ -9,7 +9,7 @@ colorSchema: auto
 # 自定义元数据（AI管理用）
 id: template
 created: 2026-03-28
-updated: 2026-03-28
+updated: 2026-03-30
 tags: [template]
 slidesCount: 3
 estimatedTime: 5min

@@ -1,0 +1,115 @@
+/**
+ * Code Block Styles
+ */
+
+pre {
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  background-color: var(--prism-background, var(--color-bg-card));
+  color: var(--prism-foreground, var(--color-text-primary));
+  overflow-x: auto;
+  font-size: var(--font-size-code);
+  font-family: var(--font-family-code);
+  line-height: var(--line-height-normal);
+}
+
+code {
+  font-family: var(--font-family-code);
+}
+
+/* 内联代码 */
+:not(pre) > code {
+  font-size: 0.9em;
+  padding: 2px 6px;
+  background-color: var(--color-bg-hover);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+}
+
+/* Prism 语法高亮 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--prism-comment, #A0ADA0);
+}
+
+.token.punctuation {
+  color: var(--prism-punctuation, #8E8F8B);
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--prism-number, #296AA3);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--prism-string, #B56959);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--prism-operator, #1A1A2E);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--prism-keyword, #4361EE);
+}
+
+.token.function,
+.token.class-name {
+  color: var(--prism-function, #6C7834);
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--prism-variable, #6B7280);
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* 行号 */
+pre .line-number {
+  display: inline-block;
+  width: 3em;
+  margin-right: var(--spacing-md);
+  text-align: right;
+  color: var(--prism-line-number, #A0ADA0);
+  user-select: none;
+}
+
+/* 高亮行 */
+pre .highlighted {
+  background-color: var(--prism-line-highlight-background, #EEF1FD);
+  display: block;
+  margin: 0 calc(var(--spacing-md) * -1);
+  padding: 0 var(--spacing-md);
+}

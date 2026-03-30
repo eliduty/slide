@@ -1,5 +1,5 @@
 <template>
-  <div class="two-column-layout">
+  <div class="slidev-layout two-cols">
     <div class="left-column">
       <slot name="left" />
     </div>
@@ -10,11 +10,11 @@
 </template>
 
 <style scoped>
-.two-column-layout {
+.two-cols {
   display: flex;
-  gap: 2rem;
+  gap: var(--spacing-xl);
   height: 100%;
-  padding: 2rem;
+  padding: var(--spacing-2xl);
 }
 
 .left-column,
@@ -22,5 +22,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
 }
 </style>

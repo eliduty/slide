@@ -1,0 +1,66 @@
+/**
+ * Prism Dark Theme - Based on brand colors
+ */
+
+html.dark {
+  --prism-background: #1E293B;
+  --prism-foreground: #E2E8F0;
+
+  /* 关键字 - 品牌色 */
+  --prism-keyword: #818CF8;
+  --prism-boolean: #4ADE80;
+
+  /* 字符串 */
+  --prism-string: #FCA5A5;
+  --prism-char: #FCA5A5;
+
+  /* 数字 */
+  --prism-number: #93C5FD;
+
+  /* 函数 */
+  --prism-function: #BEF264;
+  --prism-builtin: #FCD34D;
+
+  /* 类/类型 */
+  --prism-class: #67E8F9;
+  --prism-constant: #FB923C;
+
+  /* 变量/属性 */
+  --prism-variable: #CBD5E1;
+  --prism-property: #FBBF24;
+
+  /* 注释 */
+  --prism-comment: #64748B;
+
+  /* 标点 */
+  --prism-punctuation: #94A3B8;
+
+  /* 运算符 */
+  --prism-operator: #E2E8F0;
+
+  /* 删除/插入 */
+  --prism-deleted: #F87171;
+  --prism-inserted: #4ADE80;
+
+  /* 选择器 */
+  --prism-selector: #818CF8;
+
+  /* 正则 */
+  --prism-regex: #FB923C;
+
+  /* 命名空间 */
+  --prism-namespace: #F472B6;
+
+  /* 装饰器 */
+  --prism-decorator: #FCD34D;
+
+  /* 行号 */
+  --prism-line-number: #475569;
+  --prism-line-number-gutter: #0F172A;
+
+  /* 高亮行 */
+  --prism-line-highlight-background: #334155;
+
+  /* 选择背景 */
+  --prism-selection-background: #334155;
+}

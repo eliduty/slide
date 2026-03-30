@@ -1,0 +1,27 @@
+{
+  "name": "slidev-theme-skill-ui",
+  "version": "0.1.0",
+  "description": "基于 ui-design-spec 的 Slidev 主题，支持 Token 覆盖和双主题",
+  "author": "eliduty",
+  "license": "MIT",
+  "main": "index.ts",
+  "slidev": {
+    "colorSchema": "auto"
+  },
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "index.ts"
+  ],
+  "keywords": [
+    "slidev",
+    "slidev-theme",
+    "ui-design-spec"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliduty/slide.git",
+    "directory": "packages/slidev-theme-skill-ui"
+  }
+}
