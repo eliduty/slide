@@ -25,7 +25,7 @@
 
 3. **发展历程**
    ```
-   Web对话 → 浏览器插件 → AI IDE → 终端Agent
+   Web对话 → 编辑器插件 → AI IDE → 终端Agent
    ```
 
 4. **每个阶段的特点**
@@ -35,11 +35,18 @@
    - 终端Agent：深度理解，自主执行（Claude Code）
 
 5. **主流 AI Coding 工具**
-   - Claude Code
-   - Cursor
-   - GitHub Copilot
-   - Windsurf
+    GUI 工具：
+     - Cursor
+     - GitHub Copilot
+     - Windsurf
+     - Trae
+     - Qoder
+     - CodeBuddy
 
+  命令行工具：
+   - Claude Code
+   - OpenCode
+   - Codex
 ---
 
 ### Part 3: AI Agent 能力模型（4 页）
@@ -47,25 +54,26 @@
 6. **AI Agent 核心组件**
    ```
    ┌───────────────────────────────────────────────────┐
-   │  Rules │ Agent │ MCP │ Skill │ Memory             │
+   │  Agent │ MCP │ Skill │ Memory │ Rules │ Commands  │
    └───────────────────────────────────────────────────┘
+
+
    ┌───────────────────────────────────────────────────┐
-   │            Chat │ Plan │ Spec                      │
+   │            Chat │ Builder │ Plan │ Spec           │
    └───────────────────────────────────────────────────┘
    ```
+7. 以TRAE为例进行讲解
 
 7. **关键概念解释**
-   - Rules：行为约束和项目规范
-   - MCP：工具扩展协议（Model Context Protocol）
-   - Skill：可复用能力封装
-   - Memory：上下文记忆
+    Agent —— 智能体主体（决策、规划、控制）
+    Skill —— 能力模块（能做什么）
+    Commands —— 指令动作（具体调用什么）
+    Memory —— 记忆状态（记住上下文、历史）
+    Rules —— 规则约束（权限、安全、边界）
+    MCP —— 调度协议（连接所有模块、通信总线）
 
-8. **Claude Code Agent 体系**
-   - code-explorer：代码探索
-   - code-architect：架构设计
-   - code-reviewer：代码审查
 
-9. **Skill 的意义**
+8. **Skill 的意义**
    - 从"对话"到"结构化工作流"
    - 可复用、可组合的能力单元
    - 重新审视开发流程的契机
@@ -78,11 +86,16 @@
     - Spec → Design → Implement
     - 先定义"是什么"，再定义"怎么做"
 
-11. **OpenSpec + Superpowers**
+11. **OpenSpec**
     - OpenSpec：Proposal / Design / Specs / Tasks
     - Superpowers：自动化能力增强
 
-12. **最终方案**
+12. superpowers
+    - 介绍superpowers的概念
+    - 展示superpowers是干什么的
+
+
+13. **最终方案**
     ```
     Claude Code + OpenSpec + Superpowers
     = 深度代码理解 + 结构化流程 + 自动化执行
@@ -135,11 +148,6 @@
     - SDD 让人机协作更高效
     - 工作流变革 > 工具选择
 
-19. **资源 & 讨论**
-    - Claude Code: https://docs.anthropic.com/en/docs/claude-code
-    - Cursor: https://docs.cursor.com
-    - GitHub Copilot: https://docs.github.com/copilot
-    - Q&A
 
 ---
 
