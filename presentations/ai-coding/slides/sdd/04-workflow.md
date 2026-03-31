@@ -1,18 +1,22 @@
 # OpenSpec 工作流
 
-<div class="mt-8 flex justify-center">
+<div class="flex justify-center mt-6">
 
-```mermaid {scale: 0.7}
+<div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+
+```mermaid
 graph TB
-    P[/opsx:propose<br/>创建提案] --> E[/opsx:explore<br/>探索想法]
-    E --> A[/opsx:apply<br/>实现任务]
-    A --> AR[/opsx:archive<br/>归档沉淀]
+    P["/opsx:propose<br/>创建提案"] --> E["/opsx:explore<br/>探索想法"]
+    E --> A["/opsx:apply<br/>实现任务"]
+    A --> AR["/opsx:archive<br/>归档沉淀"]
 
-    style P fill:#4caf50,color:#fff
-    style E fill:#2196f3,color:#fff
-    style A fill:#ff9800,color:#fff
-    style AR fill:#9c27b0,color:#fff
+    style P fill:#4caf50,stroke:#2e7d32,stroke-width:3px,color:#fff
+    style E fill:#2196f3,stroke:#1565c0,stroke-width:3px,color:#fff
+    style A fill:#ff9800,stroke:#e65100,stroke-width:3px,color:#fff
+    style AR fill:#9c27b0,stroke:#6a1b9a,stroke-width:3px,color:#fff
 ```
+
+</div>
 
 </div>
 
@@ -20,7 +24,7 @@ graph TB
 
 <div class="mt-6 grid grid-cols-2 gap-6 max-w-3xl mx-auto">
 
-<div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+<div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
 
 **核心命令**
 
@@ -33,7 +37,7 @@ graph TB
 
 </div>
 
-<div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+<div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
 
 **核心价值**
 
