@@ -1,57 +1,87 @@
 # OpenSpec 工作流
 
-<div class="flex justify-center mt-6">
+<div class="flex justify-center mt-4">
 
 <div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
 
 ```mermaid
-graph TB
-    P["/opsx:propose<br/>创建提案"] --> E["/opsx:explore<br/>探索想法"]
-    E --> A["/opsx:apply<br/>实现任务"]
-    A --> AR["/opsx:archive<br/>归档沉淀"]
+graph LR
+    A[propose<br/>创建提案] --> B[explore<br/>探索代码库]
+    B --> C[apply<br/>执行任务]
+    C --> D[archive<br/>归档变更]
 
-    style P fill:#4caf50,stroke:#2e7d32,stroke-width:3px,color:#fff
-    style E fill:#2196f3,stroke:#1565c0,stroke-width:3px,color:#fff
-    style A fill:#ff9800,stroke:#e65100,stroke-width:3px,color:#fff
-    style AR fill:#9c27b0,stroke:#6a1b9a,stroke-width:3px,color:#fff
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style B fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style D fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
 ```
 
 </div>
 
 </div>
 
-<v-clicks>
+<div class="grid grid-cols-2 gap-4 mt-6">
 
-<div class="mt-6 grid grid-cols-2 gap-6 max-w-3xl mx-auto">
+<div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
 
-<div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
+### /opsx:propose
 
-**核心命令**
+<div class="text-sm mt-2 opacity-80">
 
-| 命令 | 说明 |
-|------|------|
-| `/opsx:propose` | 创建变更和规划文档 |
-| `/opsx:explore` | 探索想法，调查问题 |
-| `/opsx:apply` | 实现任务 |
-| `/opsx:archive` | 归档完成的变更 |
-
-</div>
-
-<div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700">
-
-**核心价值**
-
-<v-clicks>
-
-- ✅ 可预测性 — 明确规范带来可预测输出
-- ✅ 组织性 — 每个变更独立文件夹结构
-- ✅ 灵活性 — 随时更新任何文档
-- ✅ 工具自由 — 支持 20+ AI 编码助手
-
-</v-clicks>
+创建变更文件夹，自动生成：
+- proposal.md
+- specs/
+- design.md
+- tasks.md
 
 </div>
 
 </div>
 
-</v-clicks>
+<div class="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+
+### /opsx:explore
+
+<div class="text-sm mt-2 opacity-80">
+
+探索代码库和需求
+
+- 调查问题
+- 需求不明确时使用
+
+</div>
+
+</div>
+
+<div class="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+
+### /opsx:apply
+
+<div class="text-sm mt-2 opacity-80">
+
+执行任务
+
+- 读取 tasks.md
+- 按顺序实现
+- 生成代码
+
+</div>
+
+</div>
+
+<div class="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+
+### /opsx:archive
+
+<div class="text-sm mt-2 opacity-80">
+
+归档完成的变更
+
+- 移动到 archive/
+- 保留历史记录
+
+</div>
+
+</div>
+
+</div>

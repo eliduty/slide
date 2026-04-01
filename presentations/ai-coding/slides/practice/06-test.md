@@ -1,59 +1,76 @@
-# 测试、部署 & 方法论融合
+# 测试 & 部署
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-3 gap-4 mt-6">
 
-<div v-click>
+<div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
 
-### 测试 & 部署
+### E2E 测试
 
-<div class="mt-3 space-y-2">
+<div class="text-sm mt-2 opacity-80">
 
-<div class="p-3 bg-gray-50 dark:bg-gray-800 rounded text-sm">
+Playwright 自动化测试
 
-**E2E 测试** — Playwright 自动化测试
-
-</div>
-
-<div class="p-3 bg-gray-50 dark:bg-gray-800 rounded text-sm">
-
-**CI/CD 集成** — GitHub Actions 自动化流水线
-
-</div>
-
-<div class="p-3 bg-gray-50 dark:bg-gray-800 rounded text-sm">
-
-**代码审查** — Claude Code Review 基于 PR
+- 关键路径覆盖
+- 视觉回归测试
+- 跨浏览器验证
 
 </div>
 
 </div>
 
-</div>
+<div class="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
 
-<div v-click>
+### CI/CD 集成
 
-### 方法论融合
+<div class="text-sm mt-2 opacity-80">
 
-<div class="mt-3 space-y-2">
+GitHub Actions 自动化流水线
 
-<div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded text-sm">
-
-**SDD + DDD** — 规格驱动 + 领域驱动
-
-</div>
-
-<div class="p-3 bg-green-50 dark:bg-green-900/20 rounded text-sm">
-
-**TDD** — 测试驱动开发
+- 代码自动检测
+- 测试自动运行
+- 部署自动化
 
 </div>
 
-<div class="p-3 bg-orange-50 dark:bg-orange-900/20 rounded text-sm">
+</div>
 
-**金字塔测试** — 单元 → 集成 → E2E
+<div class="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+
+### 代码审查
+
+<div class="text-sm mt-2 opacity-80">
+
+Claude Code Review 基于 PR
+
+- 自动代码审查
+- 安全漏洞检测
+- 代码规范检查
 
 </div>
 
+</div>
+
+</div>
+
+<div class="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border-l-4 border-amber-500">
+
+**金字塔测试在 AI 编程中的应用**
+
+<div class="grid grid-cols-3 gap-3 mt-3 text-sm">
+
+<div class="p-2 bg-white dark:bg-gray-800 rounded text-center">
+<div class="font-bold">单元测试</div>
+<div class="text-xs opacity-60">验证函数和组件</div>
+</div>
+
+<div class="p-2 bg-white dark:bg-gray-800 rounded text-center">
+<div class="font-bold">集成测试</div>
+<div class="text-xs opacity-60">验证模块间交互</div>
+</div>
+
+<div class="p-2 bg-white dark:bg-gray-800 rounded text-center">
+<div class="font-bold">E2E 测试</div>
+<div class="text-xs opacity-60">验证完整流程</div>
 </div>
 
 </div>

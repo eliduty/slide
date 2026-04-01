@@ -2,71 +2,87 @@
 
 <div class="flex justify-center mt-4">
 
-<div class="p-5 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
+<div class="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl">
 
 ```mermaid
 graph TB
-    A[PRD功能模块] --> B[explore<br/>探索代码库]
-    B --> C[propose<br/>创建提案]
-    C --> D[apply<br/>执行任务]
-    D --> E[verify<br/>验证结果]
-    E --> F[archive<br/>归档沉淀]
+    A[PRD 功能模块] --> B[propose<br/>提案]
+    B --> C[explore<br/>探索代码库]
+    C --> D[apply<br/>执行]
+    D --> E[archive<br/>归档]
 
-    style A fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style B fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style C fill:#bbdefb,stroke:#1976d2,stroke-width:2px
-    style D fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style E fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style F fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style B fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style D fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style E fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
 ```
 
 </div>
 
 </div>
 
-<v-clicks>
+<div class="grid grid-cols-2 gap-4 mt-6">
 
-<div class="mt-4 grid grid-cols-3 gap-3">
+<div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
 
-<div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm border-l-4 border-blue-500">
+### propose（提案）
 
-**explore**
-探索现有代码库，理解架构
+<div class="text-sm mt-2 opacity-80">
 
-</div>
-
-<div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm border-l-4 border-blue-400">
-
-**propose**
-生成 proposal、design、spec、task
-
-</div>
-
-<div class="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg text-sm border-l-4 border-orange-500">
-
-**apply**
-按 tasks.md 逐项执行，触发 superpowers
+生成规范文档：
+- proposal.md（变更提案）
+- design.md（技术设计）
+- spec（功能规格）
+- task（任务列表）
 
 </div>
 
 </div>
 
-<div class="mt-3 grid grid-cols-2 gap-3 max-w-2xl mx-auto">
+<div class="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
 
-<div class="p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg text-sm border-l-4 border-pink-500">
+### explore（探索）
 
-**verify**
-运行测试，验证实现符合规格
+<div class="text-sm mt-2 opacity-80">
 
-</div>
-
-<div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-sm border-l-4 border-purple-500">
-
-**archive**
-归档变更，知识固化到主规格
+探索代码库：
+- 理解现有架构
+- 找到相关代码
+- 评估影响范围
 
 </div>
 
 </div>
 
-</v-clicks>
+<div class="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+
+### apply（执行）
+
+<div class="text-sm mt-2 opacity-80">
+
+执行任务：
+- 读取 tasks.md
+- 触发 superpowers
+- 生成代码
+
+</div>
+
+</div>
+
+<div class="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+
+### archive（归档）
+
+<div class="text-sm mt-2 opacity-80">
+
+归档变更：
+- 移动到 archive/
+- 保留历史记录
+- 便于追溯
+
+</div>
+
+</div>
+
+</div>
