@@ -40,13 +40,13 @@
 
 2025 年，我们进入终端 Agent 时代，Claude Code 等工具可以深度理解项目，自主执行复杂任务。"
 
-### 6. 主流 AI Coding 工具对比
+### 6. 主流 AI Coding 工具
 **说辞**：
 "现在市面上有很多 AI Coding 工具，主要分为两类：GUI 工具和命令行工具。
 
-GUI 工具包括 Cursor、GitHub Copilot、Windsurf、Trae、Qoder 等。其中 Cursor 以上下文工程和 Composer 模式著称，Trae 作为国产工具，完全免费且支持国产模型。
+GUI 工具包括 Cursor、GitHub Copilot、Windsurf、Trae、Qoder、CodeBuddy 等。
 
-命令行工具包括 Claude Code、OpenCode、Codex 等。Claude Code 的代理循环和自动验证能力非常强大。"
+命令行工具包括 Claude Code、OpenCode、Codex CLI 等。"
 
 ### 7. 行业趋势
 **行业趋势**：

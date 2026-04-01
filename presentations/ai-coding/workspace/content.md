@@ -67,23 +67,19 @@
 - 特点：深度理解，自主执行
 - 工作流：自然语言指令 → AI 自主规划 → 执行 → 验证
 
-### 6. 主流 AI Coding 工具对比
+### 6. 主流 AI Coding 工具
 **GUI 工具**：
-- **Cursor**：上下文工程，Composer 模式
-- **GitHub Copilot**：实时补全，多语言支持
-- **Windsurf**：Cascade 代理，Memories 系统
-- **Trae**：国产模型，完全免费
-- **Qoder**：专注前端开发
+- **Cursor** — AI 原生 IDE，项目级代码理解
+- **GitHub Copilot** — Microsoft/GitHub 出品，生态完整
+- **Windsurf** — Codeium 出品，Cascade 代理模式
+- **Trae** — 字节跳动出品，国内首个 AI IDE
+- **Qoder** — 阿里云出品，通义千问驱动
+- **CodeBuddy** — 腾讯云出品，腾讯生态集成
 
 **命令行工具**：
-- **Claude Code**：代理循环，自动验证
-- **OpenCode**：开源替代，轻量级
-- **Codex**：早期代码模型
-
-**适用场景分析**：
-- 个人开发：GitHub Copilot、Cursor
-- 企业级项目：Trae、Claude Code
-- 快速原型：Cursor、Windsurf
+- **Claude Code** — Anthropic 出品，终端自主编程
+- **OpenCode** — 开源社区项目，可定制
+- **Codex CLI** — OpenAI 出品，GPT 系列驱动
 
 ### 7. 行业趋势
 **AI 编程工具采用率**：
