@@ -42,10 +42,9 @@
    - AI IDE：一体化体验（Cursor）
    - 终端Agent：深度理解，自主执行（Claude Code）
 
-6. **主流 AI Coding 工具对比**
-   - GUI 工具：Cursor、GitHub Copilot、Windsurf、Trae、Qoder
-   - 命令行工具：Claude Code、OpenCode、Codex
-   - 适用场景分析
+6. **主流 AI Coding 工具**
+   - GUI 工具：Cursor、GitHub Copilot、Windsurf、Trae、Qoder、CodeBuddy
+   - 命令行工具：Claude Code、OpenCode、Codex CLI
 
 7. **行业趋势**
    - AI 编程工具采用率
