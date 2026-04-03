@@ -4,10 +4,10 @@
   "description": "个人幻灯片项目库，使用 Slidev 构建",
   "private": true,
   "scripts": {
-    "dev:template": "cd presentations/_template && slidev",
+    "dev:template": "cd presentations/_template && slidev --remote --bind",
     "build:template": "cd presentations/_template && slidev build",
     "export:template": "cd presentations/_template && slidev export",
-    "dev:ai-coding": "cd presentations/ai-coding && slidev",
+    "dev:ai-coding": "cd presentations/ai-coding && slidev --remote --bind",
     "build:ai-coding": "cd presentations/ai-coding && slidev build",
     "export:ai-coding": "cd presentations/ai-coding && slidev export"
   },
@@ -16,6 +16,7 @@
     "@slidev/theme-default": "^0.25.0"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.50.0"
+    "playwright-chromium": "^1.50.0",
+    "vite": "^8.0.3"
   }
 }

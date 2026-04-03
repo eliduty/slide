@@ -33,36 +33,36 @@
   /* ========== 字号 Font Sizes ========== */
   /* 封面 */
   --font-size-cover-title: 64px;
-  --font-size-cover-subtitle: 28px;
-  --font-size-cover-meta: 16px;
+  --font-size-cover-subtitle: 32px;
+  --font-size-cover-meta: 18px;
 
   /* 页面 */
-  --font-size-page-title: 40px;
-  --font-size-section-title: 48px;
+  --font-size-page-title: 42px;
+  --font-size-section-title: 52px;
   --font-size-heading: 32px;
-  --font-size-subheading: 24px;
+  --font-size-subheading: 26px;
 
   /* 正文 */
   --font-size-body: 24px;
-  --font-size-body-sm: 18px;
-  --font-size-caption: 14px;
+  --font-size-body-sm: 20px;
+  --font-size-caption: 16px;
 
   /* 代码 */
   --font-size-code: 18px;
 
   /* 行高 */
-  --line-height-tight: 1.25;
-  --line-height-normal: 1.5;
-  --line-height-relaxed: 1.6;
+  --line-height-tight: 1.35;
+  --line-height-normal: 1.65;
+  --line-height-relaxed: 1.8;
 
   /* ========== 间距 Spacing (基于 4px) ========== */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 64px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 56px;
+  --spacing-3xl: 80px;
 
   /* ========== 圆角 Border Radius ========== */
   --radius-sm: 4px;
@@ -105,5 +105,11 @@ html.dark {
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.30);
 
   /* 品牌色在暗色主题保持不变 */
-  /* 语义色在暗色主题保持不变 */
+  --color-primary-light: #2D3B7A;
+
+  /* 语义色在暗色主题使用深色背景 */
+  --color-success-light: #0D3D1F;
+  --color-warning-light: #3D2A0D;
+  --color-error-light: #3D1515;
+  --color-info-light: #1A2D4D;
 }
