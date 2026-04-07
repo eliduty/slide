@@ -85,3 +85,14 @@ layout: Default
 .content p { font-size: var(--font-size-card-body); color: var(--color-text-secondary); margin: var(--spacing-xs) 0; }
 .content .key { color: var(--color-primary); font-weight: var(--font-weight-medium); }
 </style>
+
+<!--
+好，今天的培训就到这里。我来做最后总结：
+
+1. **AI 不是万能的**——它擅长代码生成，不擅长业务理解。决策在人，执行在AI。
+2. **工作流要标准化**——需求、设计、实现三阶段，每个阶段有明确的进入条件和产出物。
+3. **角色在转变**——从执行者到把关者，需要建立对 AI 输出的校准直觉。
+4. **场景要灵活应对**——遗留项目和新项目有不同的策略，核心是处理好上下文。
+
+培训资料我已经整理好了，放在 `presentations/ai-coding/workspace/` 目录下。有问题随时找我交流。
+-->

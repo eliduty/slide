@@ -51,3 +51,18 @@ code, pre {
   font-size: 13px;
 }
 </style>
+
+<!--
+好，我们接近尾声了。最后，我要给大家一份"武器清单"。
+
+培训结束后，每个团队应该持有这些资产：
+
+- **需求模板**：prd-template.md，写需求的标准格式
+- **设计模板**：spec-template.md，技术设计的标准格式
+- **AI规则文件**：CLAUDE.md，告诉 AI 项目规则
+- **Prompt库**：prompts/*.md，常用任务的 prompt
+- **Review Checklist**：rules/*.md，开发规范检查清单
+- **Skills库**：skills/*/SKILL.md，实操指南
+
+这些资产在 skill 项目中都已经有了，大家可以直接复用。
+-->

@@ -67,3 +67,22 @@ layout: TwoCols
 .skill-name { font-family: var(--font-family-display); font-weight: var(--font-weight-medium); color: var(--color-primary); font-size: var(--font-size-card-title); }
 .skill-desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); margin-top: var(--spacing-xs); }
 </style>
+
+<!--
+实现阶段，AI 主要做四件事：
+
+1. **代码生成**——根据设计文档生成代码
+2. **注释生成**——给代码加注释、写文档
+3. **测试生成与执行**——生成测试用例并执行
+4. **多层次测试**——单元测试、集成测试、系统测试
+
+这里我要特别强调两个 Skills：
+
+**vue-best-practices**
+
+这是我们积累的 Vue 开发规范。当你用 AI 写 Vue 代码时，这个 Skill 会自动加载，确保输出的代码符合团队规范。它的核心原则是：状态可预测、数据流显式、组件小而专注。
+
+**test-driven-development**
+
+这是测试驱动开发的流程。核心原则是：**没有失败的测试，就不写生产代码**。先写测试，看它失败，再写最小代码让它通过，然后重构。这个流程看起来慢，但长期来看，它比"写完代码再补测试"快得多。
+-->

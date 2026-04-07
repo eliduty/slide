@@ -72,3 +72,31 @@ layout: Default
 }
 .desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); }
 </style>
+
+<!--
+有一些工作贯穿整个流程：
+
+**项目知识规范化陈述**
+
+我们用 CLAUDE.md 文件来定义项目规则。这个文件是 AI 理解项目的入口，它会告诉 AI：我们用什么技术栈、有什么约定、禁止做什么。
+
+**上下文渐进式披露**
+
+也叫 harness engineering。就是知道在什么时机给 AI 什么信息。开始时给架构背景，设计时给需求细节，实现时给技术规范。
+
+**设计与实现的评价评审**
+
+AI 可以帮你 review 代码、设计方案。但最终决策必须由人来做出。
+
+**安全审计**
+
+AI 可以扫描代码中的安全漏洞，比如 SQL 注入、XSS。但我们有一个规则文件：`rules/api-security.md`，定义了安全规范，AI 会根据这个规范来检查。
+
+**版本控制联动**
+
+分支治理怎么调整？我们有一个 `finishing-a-development-branch` Skill，告诉你分支完成后应该做什么：测试、评审、合并。
+
+**Skills体系**
+
+沉淀最佳实践，形成可复用的知识库。
+-->

@@ -75,3 +75,11 @@ layout: Default
   border-radius: var(--radius-sm);
 }
 </style>
+
+<!--
+**课后自学建议**：
+
+- **初级**：阅读 `docs/guides/openspec-superpowers-workflow.md`，理解四阶段流程。
+- **中级**：参考 `openspec/changes/admin-role-authorization/` 案例，独立完成一个简单变更。
+- **高级**：开发一个团队专属 Skill，沉淀你们的最佳实践。
+-->

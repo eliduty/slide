@@ -81,3 +81,19 @@ layout: Default
   color: var(--color-text-primary);
 }
 </style>
+
+<!--
+设计阶段是 AI 发挥作用最大的环节。AI 可以帮你做七件事：
+
+1. **架构设计与项目结构治理**——告诉你项目目录怎么组织、模块怎么划分
+2. **技术选型**——提供方案比较，帮你分析优劣
+3. **接口契约设计**——生成 OpenAPI/Swagger 规范
+4. **界面交互原型设计**——我们用 Pencil 工具，AI 可以直接生成原型
+5. **界面设计规范与详细设计**——组件怎么设计、交互怎么定义
+6. **测试场景与测试方案制定**——告诉你测什么、怎么测
+7. **运维与持续交付方案设计**——CI/CD 管道、部署策略
+
+产出物是三件套：proposal.md + design.md + tasks.md。
+
+我们有一个完整的变更案例：`openspec/changes/admin-role-authorization/`。这个案例展示了从 proposal 到 design 到 tasks 的完整过程，大家课后可以去看。
+-->
