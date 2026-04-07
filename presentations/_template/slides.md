@@ -1,10 +1,11 @@
 ---
 # Slidev 标准配置
-theme: ../../packages/slidev-theme-skill-ui
+theme: default
 title: 演示标题
 author: eliduty
 aspectRatio: 16/9
 colorSchema: auto
+lineNumbers: true
 
 # 自定义元数据（AI管理用）
 id: template

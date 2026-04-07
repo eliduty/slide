@@ -1,8 +1,9 @@
 ---
 layout: Section
-title: 第4章
 ---
 
-# 第4章
+# 第 4 章
 
-## AI Coding 工具作用于工作流
+AI Coding 工具在各阶段的应用
+
+<p>需求 · 设计 · 实现 · 全局</p>

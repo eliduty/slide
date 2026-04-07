@@ -1,12 +1,15 @@
 ---
-layout: Cover
-title: 研发 AI Coding 培训
+layout: cover
 ---
 
-# 研发 AI Coding 培训
+# 研发 AI Coding 工作流
 
-基于 skill 项目实践的工作流分享
+基于 skill 项目实践的培训分享
 
-<div class="mt-8 text-sm opacity-70">
-  时长：约 90 分钟 | 受众：研发全员（PM+SDE+QA）
+时长：90分钟 | 受众：研发全员（PM+SDE+QA）
+
+<div class="cover-footer">
+
+eliduty · 2026
+
 </div>

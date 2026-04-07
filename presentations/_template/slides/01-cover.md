@@ -1,5 +1,5 @@
 ---
-layout: Cover
+layout: cover
 title: 封面
 order: 1
 ---

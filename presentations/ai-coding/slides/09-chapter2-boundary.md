@@ -1,27 +1,40 @@
 ---
 layout: Default
-title: 人与AI的边界
-duration: 12min
 ---
 
-# 人与AI的边界
+# 2.2 人与AI的边界
 
-## 各阶段分工表
+| 阶段 | AI 负责 | 人 负责 |
+|:----:|:--------|:--------|
+| 需求 | 需求推演完善、结构化描述 | 业务目标定义、验收标准确定 |
+| 设计 | 技术方案生成、接口契约设计 | 技术选型决策、架构边界定义 |
+| 实现 | 根据规范生成代码、测试 | 验证输出质量、处理边界情况 |
 
-| 阶段 | AI负责 | 人负责 |
-|------|--------|--------|
-| **需求** | 需求推演完善、结构化描述 | 业务目标定义、验收标准确定 |
-| **设计** | 技术方案生成、接口契约设计 | 技术选型决策、架构边界定义 |
-| **实现** | 根据规范生成代码、测试 | 验证输出质量、处理边界情况 |
+<div class="principle-box">
+<strong>核心原则</strong> — 决策在人，执行在AI
+</div>
 
-<v-click>
-
-<Admonition type="success" title="核心原则">
-
-**决策在人，执行在AI**
-
+<div class="explain">
 AI 可以帮你生成方案、生成代码，但决策——做什么、不做什么、怎么做——必须由人来决定。
+</div>
 
-</Admonition>
-
-</v-click>
+<style>
+.principle-box {
+  margin-top: 1rem;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.principle-box strong { font-size: 1rem; }
+.explain {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--color-text-primary);
+}
+</style>

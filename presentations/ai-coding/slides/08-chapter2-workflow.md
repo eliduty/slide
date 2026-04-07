@@ -1,42 +1,103 @@
 ---
-layout: TopTitle
-duration: 8min
+layout: Default
 ---
 
-::title::
+# 2.1 标准工作流三阶段
 
-# 标准工作流三阶段
+<div class="workflow-flow">
 
-<v-clicks>
+<div class="stage">
+<div class="stage-header">
+<span class="stage-num">01</span>
+<span class="stage-title">需求阶段</span>
+</div>
+<div class="stage-body">
+<div><strong>参与：</strong>PM + SDE</div>
+<div><strong>产出：</strong>PRD 文档</div>
+<div><strong>条件：</strong>需求评审通过</div>
+</div>
+</div>
 
-## 需求阶段
+<div class="arrow">→</div>
 
-| 5W1H | 定义 |
-|------|------|
-| **谁参与** | PM + SDE |
-| **做什么** | 结构化需求描述 |
-| **标准** | 业务边界明确、验收标准清晰 |
-| **产出物** | PRD 文档 |
-| **进入下一阶段条件** | 需求评审通过 |
+<div class="stage">
+<div class="stage-header">
+<span class="stage-num">02</span>
+<span class="stage-title">技术设计</span>
+</div>
+<div class="stage-body">
+<div><strong>参与：</strong>SDE主导 + PM</div>
+<div><strong>产出：</strong>proposal + design + tasks</div>
+<div><strong>条件：</strong>技术评审通过</div>
+</div>
+</div>
 
-## 技术设计阶段
+<div class="arrow">→</div>
 
-| 5W1H | 定义 |
-|------|------|
-| **谁参与** | SDE 主导，PM 参与 |
-| **做什么** | 技术方案、接口契约、测试策略 |
-| **标准** | 技术选型确定、架构边界清晰 |
-| **产出物** | proposal.md + design.md + tasks.md |
-| **进入下一阶段条件** | 技术评审通过 |
+<div class="stage">
+<div class="stage-header">
+<span class="stage-num">03</span>
+<span class="stage-title">实现阶段</span>
+</div>
+<div class="stage-body">
+<div><strong>参与：</strong>SDE</div>
+<div><strong>产出：</strong>代码 + 测试 + 文档</div>
+<div><strong>条件：</strong>lint通过、测试覆盖达标</div>
+</div>
+</div>
 
-## 规范AI工作环境阶段
+</div>
 
-| 5W1H | 定义 |
-|------|------|
-| **谁参与** | SDE |
-| **做什么** | 开发、测试、联动调试、领域知识规范化 |
-| **标准** | CLAUDE.md 配置、Skills 加载 |
-| **产出物** | 代码 + 测试 + 文档 |
-| **进入下一阶段条件** | lint 通过、测试覆盖达标 |
+<div class="highlight">
+每个阶段用 5W1H 定义：谁参与、做什么、标准、产出、如何做、用时多少
+</div>
 
-</v-clicks>
+<style>
+.workflow-flow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+.stage {
+  flex: 1;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  padding: 0.5rem;
+}
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.stage-num {
+  background: var(--color-primary);
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.stage-title { font-weight: 600; font-size: 0.85rem; color: var(--color-text-primary); }
+.stage-body { font-size: 0.75rem; color: var(--color-text-primary); }
+.stage-body div { margin-bottom: 0.1rem; }
+.arrow {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  padding-top: 0.5rem;
+}
+.highlight {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: var(--color-info-light);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--color-text-primary);
+}
+</style>
