@@ -9,7 +9,7 @@ id: ai-coding
 created: 2026-04-07
 updated: 2026-04-07
 tags: [AI, Coding, 工作流, 培训]
-slidesCount: 26
+slidesCount: 28
 estimatedTime: 90min
 status: draft
 src: ./slides/01-cover.md
@@ -49,74 +49,82 @@ src: ./slides/08-chapter2-workflow.md
 src: ./slides/09-chapter2-boundary.md
 ---
 
+---
+src: ./slides/10-chapter2-env.md
+---
+
 <!-- 第3章 -->
 ---
-src: ./slides/10-chapter3-section.md
+src: ./slides/11-chapter3-section.md
 ---
 
 ---
-src: ./slides/11-chapter3-pm.md
+src: ./slides/12-chapter3-pm.md
 ---
 
 ---
-src: ./slides/12-chapter3-sdeqa.md
+src: ./slides/13-chapter3-sdeqa.md
 ---
 
 ---
-src: ./slides/13-chapter3-review.md
+src: ./slides/14-chapter3-review.md
 ---
 
 ---
-src: ./slides/14-chapter3-summary.md
+src: ./slides/15-chapter3-summary.md
 ---
 
 <!-- 第4章 -->
 ---
-src: ./slides/15-chapter4-section.md
+src: ./slides/16-chapter4-section.md
 ---
 
 ---
-src: ./slides/16-chapter4-requirement.md
+src: ./slides/17-chapter4-requirement.md
 ---
 
 ---
-src: ./slides/17-chapter4-design.md
+src: ./slides/18-chapter4-design.md
 ---
 
 ---
-src: ./slides/18-chapter4-implementation.md
+src: ./slides/19-chapter4-implementation.md
 ---
 
 ---
-src: ./slides/19-chapter4-global.md
+src: ./slides/20-chapter4-global.md
+---
+
+---
+src: ./slides/21-chapter4-context.md
 ---
 
 <!-- 第5章 -->
 ---
-src: ./slides/20-chapter5-section.md
+src: ./slides/22-chapter5-section.md
 ---
 
 ---
-src: ./slides/21-chapter5-legacy.md
+src: ./slides/23-chapter5-legacy.md
 ---
 
 ---
-src: ./slides/22-chapter5-new.md
+src: ./slides/24-chapter5-new.md
 ---
 
 <!-- 附录 -->
 ---
-src: ./slides/23-assets.md
+src: ./slides/25-assets.md
 ---
 
 ---
-src: ./slides/24-self-study.md
+src: ./slides/26-self-study.md
 ---
 
 ---
-src: ./slides/25-summary.md
+src: ./slides/27-summary.md
 ---
 
 ---
-src: ./slides/26-credits.md
+src: ./slides/28-credits.md
 ---
