@@ -60,33 +60,45 @@ layout: Default
 .scenario-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.4rem;
-  margin-top: 0.3rem;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
 }
 .scenario {
-  background: var(--color-primary-light);
-  padding: 0.5rem;
-  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid;
 }
+.scenario:nth-child(1) { background: var(--color-accent-orange-light); border-color: var(--color-accent-orange); }
+.scenario:nth-child(2) { background: var(--color-info-light); border-color: var(--color-info); }
+.scenario:nth-child(3) { background: var(--color-success-light); border-color: var(--color-success); }
+.scenario:nth-child(4) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.scenario:nth-child(5) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
+.scenario:nth-child(6) { background: var(--color-accent-gold-light); border-color: var(--color-accent-gold); }
 .header {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  margin-bottom: 0.3rem;
+  gap: var(--spacing-xs);
+  margin-bottom: 4px;
 }
 .num {
-  background: var(--color-primary);
-  color: white;
+  font-family: var(--font-family-display);
   width: 22px;
   height: 22px;
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 0.7rem;
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  background: var(--color-primary);
+  color: var(--color-bg-card);
 }
-.title { font-weight: 600; font-size: 0.85rem; color: var(--color-text-primary); }
-.body p { font-size: 0.7rem; margin: 0.1rem 0; color: var(--color-text-secondary); }
+.title {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-card-title);
+  color: var(--color-text-primary);
+}
+.body p { font-size: var(--font-size-card-meta); margin: 3px 0; color: var(--color-text-secondary); line-height: 1.55; }
 .body strong { color: var(--color-primary); }
 </style>

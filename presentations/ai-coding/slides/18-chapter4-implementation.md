@@ -33,29 +33,37 @@ layout: TwoCols
 .impl-list {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: var(--spacing-sm);
 }
 .impl-item {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0.75rem;
-  background: var(--color-primary-light);
-  border-radius: var(--radius-sm);
-  color: var(--color-text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid;
 }
-.impl-item span { font-size: 0.8rem; color: var(--color-text-secondary); }
+.impl-item:nth-child(1) { background: var(--color-info-light); border-color: var(--color-info); }
+.impl-item:nth-child(2) { background: var(--color-success-light); border-color: var(--color-success); }
+.impl-item:nth-child(3) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.impl-item:nth-child(4) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
+.impl-item strong { font-size: var(--font-size-card-title); }
+.impl-item span { font-size: var(--font-size-card-body); color: var(--color-text-secondary); }
 .skills-box {
-  background: var(--color-bg-hover);
-  padding: 0.75rem;
+  background: var(--color-bg-subtle);
+  padding: var(--spacing-md);
   border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
 }
-.skills-box strong { display: block; margin-bottom: 0.5rem; color: var(--color-text-primary); }
+.skills-box strong { display: block; margin-bottom: var(--spacing-sm); color: var(--color-text-primary); font-size: var(--font-size-card-title); }
 .skill-card {
-  background: var(--color-primary-light);
-  padding: 0.5rem;
-  border-radius: var(--radius-sm);
-  margin-bottom: 0.4rem;
+  background: var(--color-bg-card);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-sm);
+  border: 1px solid;
 }
-.skill-name { font-weight: 600; color: var(--color-primary); font-size: 0.85rem; }
-.skill-desc { font-size: 0.75rem; color: var(--color-text-secondary); margin-top: 0.1rem; }
+.skill-card:nth-child(1) { border-color: var(--color-info); background: var(--color-info-light); }
+.skill-card:nth-child(2) { border-color: var(--color-success); background: var(--color-success-light); }
+.skill-name { font-family: var(--font-family-display); font-weight: var(--font-weight-medium); color: var(--color-primary); font-size: var(--font-size-card-title); }
+.skill-desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); margin-top: var(--spacing-xs); }
 </style>

@@ -48,29 +48,40 @@ layout: Default
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 .summary-item {
-  background: var(--color-primary-light);
-  padding: 0.6rem;
-  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
   display: flex;
-  gap: 0.5rem;
+  gap: var(--spacing-md);
+  border: 1px solid;
 }
+.summary-item:nth-child(1) { background: var(--color-info-light); border-color: var(--color-info); }
+.summary-item:nth-child(2) { background: var(--color-success-light); border-color: var(--color-success); }
+.summary-item:nth-child(3) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.summary-item:nth-child(4) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
 .num {
-  background: var(--color-primary);
-  color: white;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
+  font-family: var(--font-family-display);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-card-meta);
 }
-.content strong { font-size: 0.9rem; color: var(--color-text-primary); }
-.content p { font-size: 0.8rem; color: var(--color-text-secondary); margin: 0.1rem 0; }
-.content .key { color: var(--color-primary); font-weight: 500; }
+.summary-item:nth-child(1) .num { background: var(--color-info); color: var(--color-bg-card); }
+.summary-item:nth-child(2) .num { background: var(--color-success); color: var(--color-bg-card); }
+.summary-item:nth-child(3) .num { background: var(--color-warning); color: var(--color-bg-card); }
+.summary-item:nth-child(4) .num { background: var(--color-accent-teal); color: var(--color-bg-card); }
+.content strong {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-card-title);
+  color: var(--color-text-primary);
+}
+.content p { font-size: var(--font-size-card-body); color: var(--color-text-secondary); margin: var(--spacing-xs) 0; }
+.content .key { color: var(--color-primary); font-weight: var(--font-weight-medium); }
 </style>

@@ -44,36 +44,46 @@ layout: Default
 .ability-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.75rem;
-  margin-top: 0.75rem;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 .ability-item {
-  background: var(--color-primary-light);
-  padding: 0.75rem;
+  padding: var(--spacing-md);
   border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
   text-align: center;
 }
+.ability-item:nth-child(1) { background: var(--color-success-light); border-color: var(--color-success); }
+.ability-item:nth-child(2) { background: var(--color-info-light); border-color: var(--color-info); }
+.ability-item:nth-child(3) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.ability-item:nth-child(4) { background: var(--color-bg-subtle); border-color: var(--color-text-muted); }
 .level {
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  padding: 0.2rem 0.5rem;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+  padding: 4px 12px;
   border-radius: var(--radius-sm);
-  font-size: 0.8rem;
+  font-size: var(--font-size-card-meta);
 }
-.strong .level { background: var(--color-success); color: white; }
-.guided .level { background: var(--color-primary); color: white; }
-.risky .level { background: var(--color-warning); color: white; }
-.dependent .level { background: #6b7280; color: white; }
-.title { font-weight: 600; font-size: 0.9rem; color: var(--color-text-primary); }
-.desc { font-size: 0.8rem; color: var(--color-text-secondary); }
-.condition { font-size: 0.7rem; color: var(--color-text-secondary); margin-top: 0.3rem; }
+.strong .level { background: var(--color-success); color: var(--color-bg-card); }
+.guided .level { background: var(--color-info); color: var(--color-bg-card); }
+.risky .level { background: var(--color-warning); color: var(--color-bg-card); }
+.dependent .level { background: var(--color-text-muted); color: var(--color-bg-card); }
+.title {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-card-title);
+  color: var(--color-text-primary);
+}
+.desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); }
+.condition { font-size: var(--font-size-card-meta); color: var(--color-text-muted); margin-top: var(--spacing-xs); }
 .key-point {
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background: var(--color-info-light);
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--color-accent-orange-light);
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--color-primary);
-  font-size: 0.9rem;
+  border-left: 4px solid var(--color-accent-orange);
+  font-size: var(--font-size-card-body);
   color: var(--color-text-primary);
 }
 </style>

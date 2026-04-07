@@ -32,44 +32,52 @@ layout: Default
 </div>
 
 <style>
-.design-list { margin-top: 0.5rem; }
+.design-list { margin-top: var(--spacing-md); }
 .design-row {
   display: flex;
-  gap: 0.4rem;
-  margin-bottom: 0.4rem;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 .item {
   flex: 1;
-  background: var(--color-primary-light);
-  padding: 0.6rem;
-  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
   text-align: center;
-  font-weight: 500;
-  font-size: 0.85rem;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-card-title);
   color: var(--color-text-primary);
+  border: 1px solid;
 }
+.design-row:nth-child(1) .item:nth-child(1) { background: var(--color-info-light); border-color: var(--color-info); }
+.design-row:nth-child(1) .item:nth-child(2) { background: var(--color-success-light); border-color: var(--color-success); }
+.design-row:nth-child(1) .item:nth-child(3) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.design-row:nth-child(2) .item:nth-child(1) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
+.design-row:nth-child(2) .item:nth-child(2) { background: var(--color-accent-gold-light); border-color: var(--color-accent-gold); }
+.design-row:nth-child(2) .item:nth-child(3) { background: var(--color-accent-rose-light); border-color: var(--color-accent-rose); }
 .output-box {
-  margin-top: 1rem;
-  padding: 0.75rem;
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
   background: var(--color-primary);
-  color: white;
+  color: var(--color-bg-card);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--spacing-md);
 }
+.output-box strong { font-size: var(--font-size-card-body); }
 .output-box span {
   background: rgba(255,255,255,0.2);
-  padding: 0.2rem 0.5rem;
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
-  font-size: 0.8rem;
+  font-size: var(--font-size-card-meta);
 }
 .case-ref {
-  margin-top: 0.75rem;
-  padding: 0.5rem 0.75rem;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-lg);
   background: var(--color-bg-hover);
-  border-radius: var(--radius-sm);
-  font-size: 0.8rem;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-card-body);
   color: var(--color-text-primary);
 }
 </style>

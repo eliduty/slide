@@ -16,7 +16,7 @@
   font-size: var(--font-size-page-title);
   font-weight: 600;
   line-height: var(--line-height-tight);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
   color: var(--color-text-primary);
 }
 

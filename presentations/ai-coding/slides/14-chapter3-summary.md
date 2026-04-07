@@ -38,35 +38,39 @@ layout: Default
 .role-change {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 .change-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem;
-  background: var(--color-primary-light);
-  border-radius: var(--radius-sm);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
 }
+.change-item:nth-child(1) { background: var(--color-success-light); }
+.change-item:nth-child(2) { background: var(--color-info-light); }
+.change-item:nth-child(3) { background: var(--color-accent-teal-light); }
 .from, .to {
-  font-weight: 600;
-  padding: 0.2rem 0.5rem;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-medium);
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
-  font-size: 0.85rem;
+  font-size: var(--font-size-card-meta);
 }
 .from { background: var(--color-border); color: var(--color-text-secondary); }
-.to { background: var(--color-primary); color: white; }
-.arrow { color: var(--color-primary); font-size: 1rem; }
-.desc { font-size: 0.8rem; color: var(--color-text-secondary); margin-left: 0.5rem; }
+.to { background: var(--color-primary); color: var(--color-bg-card); }
+.arrow { color: var(--color-primary); font-size: var(--font-size-card-title); }
+.desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); margin-left: var(--spacing-sm); }
 .key-ability {
-  margin-top: 1rem;
-  padding: 1rem;
-  background: var(--color-primary);
-  color: white;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-md);
+  background: #1A365D;
   border-radius: var(--radius-lg);
   text-align: center;
 }
-.key-ability strong { font-size: 0.95rem; }
-.key-ability p { margin-top: 0.3rem; font-size: 0.85rem; }
+.key-ability strong { font-size: var(--font-size-card-title); color: #FFFFFF; }
+.key-ability p { margin-top: var(--spacing-xs); margin-bottom: 0; font-size: var(--font-size-card-body); color: #FFFFFF; }
 </style>

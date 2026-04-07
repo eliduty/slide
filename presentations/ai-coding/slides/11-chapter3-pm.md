@@ -36,23 +36,35 @@ layout: Default
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 .impact-card {
-  background: var(--color-primary-light);
-  padding: 0.6rem;
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--color-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 3px solid;
 }
-.card-title { font-weight: 600; font-size: 0.85rem; color: var(--color-text-primary); }
-.card-content { font-size: 0.8rem; color: var(--color-text-secondary); margin-top: 0.2rem; }
+.impact-card:nth-child(1) { background: var(--color-success-light); border-color: var(--color-success); }
+.impact-card:nth-child(2) { background: var(--color-info-light); border-color: var(--color-info); }
+.impact-card:nth-child(3) { background: var(--color-accent-gold-light); border-color: var(--color-accent-gold); }
+.impact-card:nth-child(4) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.card-title {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-card-title);
+  color: var(--color-text-primary);
+}
+.card-content {
+  font-size: var(--font-size-card-body);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-xs);
+}
 .case-ref {
-  margin-top: 0.75rem;
-  padding: 0.5rem 0.75rem;
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
   background: var(--color-bg-hover);
-  border-radius: var(--radius-sm);
-  font-size: 0.8rem;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-card-body);
   color: var(--color-text-primary);
 }
 </style>

@@ -1,0 +1,241 @@
+/**
+ * Component Styles Override - Editorial Style
+ *
+ * 设计理念：杂志风格的组件设计
+ * 避免模板化的卡片式布局，使用更精致的装饰元素
+ */
+
+/* ========== 数字徽章 - Editorial 编号风格 ========== */
+
+.number-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 10px;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-card-meta);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.number-badge-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 10px;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-card-meta);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-bg-card);
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+/* ========== 信息卡片 - Editorial 风格 ========== */
+
+.info-card {
+  padding: var(--spacing-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card-bordered {
+  padding: var(--spacing-md);
+  background: var(--color-bg-card);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.info-card-accent {
+  padding: var(--spacing-md);
+  background: var(--color-accent-light);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* ========== 高亮提示框 - Magazine Note ========== */
+
+.highlight-box {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-card-body);
+  color: var(--color-text-primary);
+}
+
+.highlight-box-accent {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-accent-light);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-card-body);
+  color: var(--color-text-primary);
+}
+
+.highlight-box-bordered {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--font-size-card-body);
+  color: var(--color-text-primary);
+}
+
+/* ========== 网格布局 - 更宽松的间距 ========== */
+
+.editorial-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.editorial-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.editorial-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.editorial-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+}
+
+/* ========== 流程/阶段展示 ========== */
+
+.flow-stage {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.flow-stage-item {
+  flex: 1;
+  padding: var(--spacing-md);
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.flow-stage-num {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-card-title);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.flow-arrow {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-heading);
+}
+
+/* ========== 案例引用 ========== */
+
+.case-ref {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-bg-hover);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-card-body);
+  color: var(--color-text-primary);
+}
+
+.case-ref code {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-card-meta);
+  padding: 2px 8px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-sm);
+}
+
+/* ========== 能力等级标签 ========== */
+
+.level-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: var(--font-size-card-meta);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+}
+
+.level-badge-strong {
+  background: var(--color-success);
+  color: var(--color-bg-card);
+}
+
+.level-badge-guided {
+  background: var(--color-primary);
+  color: var(--color-bg-card);
+}
+
+.level-badge-risky {
+  background: var(--color-warning);
+  color: var(--color-bg-card);
+}
+
+.level-badge-dependent {
+  background: var(--color-text-muted);
+  color: var(--color-bg-card);
+}
+
+/* ========== 任务列表项 ========== */
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.task-item-num {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-card-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+.task-item-title {
+  font-size: var(--font-size-card-title);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.task-item-desc {
+  font-size: var(--font-size-card-body);
+  color: var(--color-text-secondary);
+}
+
+/* ========== 分隔线 ========== */
+
+.editorial-divider {
+  height: 2px;
+  background: var(--color-border);
+  margin: var(--spacing-lg) 0;
+}
+
+.editorial-divider-accent {
+  height: 3px;
+  background: var(--color-primary);
+  margin: var(--spacing-lg) 0;
+}

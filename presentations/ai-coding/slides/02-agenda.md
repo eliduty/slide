@@ -1,6 +1,8 @@
 ---
-layout: Default
+layout: TwoCols
 ---
+
+::left::
 
 # 议程
 
@@ -43,39 +45,52 @@ layout: Default
 
 </div>
 
+::right::
+
 <div class="goal-box">
-<strong>培训目标：</strong> 建立统一认知框架，明确"人做什么、AI做什么"的边界
+<div class="goal-title">培训目标</div>
+<div class="goal-desc">建立统一认知框架，明确"人做什么、AI做什么"的边界</div>
 </div>
 
 <style>
 .agenda-grid {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--spacing-xs);
 }
 .agenda-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.3rem 0;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
 }
 .time {
+  font-family: var(--font-family-display);
   background: var(--color-primary);
-  color: white;
-  padding: 0.2rem 0.5rem;
+  color: var(--color-bg-card);
+  padding: 2px 8px;
   border-radius: var(--radius-sm);
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: var(--font-size-card-meta);
+  font-weight: var(--font-weight-medium);
   min-width: 50px;
 }
-.content { font-size: 0.9rem; color: var(--color-text-primary); }
+.content { font-size: var(--font-size-card-body); color: var(--color-text-primary); }
 .goal-box {
-  margin-top: 0.75rem;
-  background: var(--color-primary-light);
-  padding: 0.6rem 1rem;
-  border-radius: var(--radius-md);
-  border-left: 3px solid var(--color-primary);
-  font-size: 0.85rem;
-  color: var(--color-text-primary);
+  background: #1A365D;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+.goal-title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-semibold);
+  color: #FFFFFF;
+  margin-bottom: var(--spacing-md);
+}
+.goal-desc {
+  font-size: var(--font-size-card-body);
+  color: #F7FAFC;
+  line-height: 1.6;
 }
 </style>

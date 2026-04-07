@@ -34,17 +34,20 @@ table {
   border-collapse: collapse;
 }
 th, td {
-  padding: 0.4rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
   border: 1px solid var(--color-border);
+  font-size: var(--font-size-card-meta);
 }
 th {
-  background: var(--color-primary-light);
-  font-weight: 600;
+  background: var(--color-bg-subtle);
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-medium);
 }
 td:first-child {
   text-align: center;
 }
 code, pre {
-  font-size: 0.8rem;
+  font-family: var(--font-family-code);
+  font-size: 13px;
 }
 </style>

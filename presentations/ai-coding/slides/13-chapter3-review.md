@@ -40,36 +40,41 @@ layout: Default
 .review-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 .review-card {
-  background: var(--color-primary-light);
-  padding: 0.6rem;
-  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid;
 }
+.review-card:nth-child(1) { background: var(--color-info-light); border-color: var(--color-info); }
+.review-card:nth-child(2) { background: var(--color-success-light); border-color: var(--color-success); }
+.review-card:nth-child(3) { background: var(--color-warning-light); border-color: var(--color-warning); }
 .review-type {
-  background: var(--color-primary);
-  color: white;
-  padding: 0.2rem 0.5rem;
+  padding: 4px 12px;
   border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-card-meta);
   display: inline-block;
 }
-.review-focus strong { font-size: 0.85rem; color: var(--color-text-primary); }
+.review-card:nth-child(1) .review-type { background: var(--color-info); color: var(--color-bg-card); }
+.review-card:nth-child(2) .review-type { background: var(--color-success); color: var(--color-bg-card); }
+.review-card:nth-child(3) .review-type { background: var(--color-warning); color: var(--color-bg-card); }
+.review-focus strong { font-size: var(--font-size-card-title); color: var(--color-text-primary); }
 .review-focus p {
-  font-size: 0.75rem;
+  font-size: var(--font-size-card-body);
   color: var(--color-text-secondary);
-  margin-top: 0.2rem;
+  margin-top: var(--spacing-xs);
 }
 .reminder {
-  margin-top: 0.75rem;
-  padding: 0.6rem;
-  background: var(--color-warning-light);
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--color-accent-rose-light);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-card-body);
   text-align: center;
   color: var(--color-text-primary);
+  border: 1px solid var(--color-accent-rose);
 }
 </style>

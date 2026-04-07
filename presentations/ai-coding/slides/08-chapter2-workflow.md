@@ -55,48 +55,61 @@ layout: Default
 <style>
 .workflow-flow {
   display: flex;
-  align-items: flex-start;
-  gap: 0.25rem;
-  margin-top: 0.5rem;
+  align-items: stretch;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
 }
 .stage {
   flex: 1;
-  background: var(--color-primary-light);
   border-radius: var(--radius-md);
-  padding: 0.5rem;
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
 }
+.stage:nth-child(1) { background: var(--color-success-light); border: 1px solid var(--color-success); }
+.stage:nth-child(3) { background: var(--color-info-light); border: 1px solid var(--color-info); }
+.stage:nth-child(5) { background: var(--color-warning-light); border: 1px solid var(--color-warning); }
 .stage-header {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  margin-bottom: 0.3rem;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
 }
 .stage-num {
-  background: var(--color-primary);
-  color: white;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+  font-family: var(--font-family-display);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-card-meta);
 }
-.stage-title { font-weight: 600; font-size: 0.85rem; color: var(--color-text-primary); }
-.stage-body { font-size: 0.75rem; color: var(--color-text-primary); }
-.stage-body div { margin-bottom: 0.1rem; }
+.stage:nth-child(1) .stage-num { background: var(--color-success); color: var(--color-bg-card); }
+.stage:nth-child(3) .stage-num { background: var(--color-info); color: var(--color-bg-card); }
+.stage:nth-child(5) .stage-num { background: var(--color-warning); color: var(--color-bg-card); }
+.stage-title {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-card-title);
+  color: var(--color-text-primary);
+}
+.stage-body { font-size: var(--font-size-card-body); color: var(--color-text-primary); }
+.stage-body div { margin-bottom: var(--spacing-xs); }
+.stage-body strong { color: var(--color-primary); }
 .arrow {
-  font-size: 1.2rem;
-  color: var(--color-primary);
-  padding-top: 0.5rem;
+  font-size: var(--font-size-heading);
+  color: var(--color-text-muted);
+  padding-top: var(--spacing-md);
 }
 .highlight {
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background: var(--color-info-light);
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--color-accent-teal-light);
   border-radius: var(--radius-md);
-  font-size: 0.85rem;
+  border: 1px solid var(--color-accent-teal);
+  font-size: var(--font-size-card-body);
   text-align: center;
   color: var(--color-text-primary);
 }

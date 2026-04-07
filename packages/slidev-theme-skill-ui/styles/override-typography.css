@@ -1,0 +1,143 @@
+/**
+ * Typography Override - Editorial Style
+ *
+ * 设计理念：杂志风格排版，注重可读性与视觉层级
+ * 字体尺寸适配幻灯片投影场景
+ */
+
+:root {
+  /* ========== 字号重新定义（幻灯片专用） ========== */
+  /* 封面 - 适当大小 */
+  --font-size-cover-title: 56px;
+  --font-size-cover-subtitle: 28px;
+  --font-size-cover-meta: 18px;
+
+  /* 页面标题 */
+  --font-size-page-title: 38px;
+  --font-size-section-title: 48px;
+  --font-size-heading: 30px;
+  --font-size-subheading: 24px;
+
+  /* 正文 - 幻灯片适配尺寸 */
+  --font-size-body: 20px;
+  --font-size-body-lg: 22px;
+  --font-size-body-sm: 18px;
+  --font-size-caption: 16px;
+
+  /* 卡片/组件内部 */
+  --font-size-card-title: 18px;
+  --font-size-card-body: 16px;
+  --font-size-card-meta: 14px;
+
+  /* 代码 */
+  --font-size-code: 16px;
+
+  /* ========== 字体家族 ========== */
+  --font-family-display: "Microsoft YaHei", "PingFang SC", sans-serif;
+  --font-family-base: "Microsoft YaHei", "PingFang SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-code: "JetBrains Mono", "Fira Code", Consolas, monospace;
+
+  /* 行高 - 适当紧凑 */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.45;
+  --line-height-relaxed: 1.6;
+
+  /* 字重 */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* ========== 标题层级 ========== */
+
+/* 封面标题 - Editorial 风格 */
+.slidev-layout.cover h1 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-cover-title);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+}
+
+/* 章节标题 */
+.slidev-layout.section h1 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.01em;
+}
+
+/* 页面标题 */
+h1, .slidev-layout.default h1 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-page-title);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* 次级标题 */
+h2 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+h3 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ========== 正文与列表 ========== */
+
+p {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
+}
+
+ul, ol {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-relaxed);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-body);
+}
+
+/* ========== 内联元素 ========== */
+
+strong, b {
+  font-weight: var(--font-weight-semibold);
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* 代码 */
+code:not(pre code) {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-body-sm);
+  padding: 3px 8px;
+  background-color: var(--color-bg-hover);
+  border-radius: var(--radius-sm);
+}
+
+/* ========== 辅助类 ========== */
+
+.text-lg {
+  font-size: var(--font-size-body-lg);
+}
+
+.text-sm {
+  font-size: var(--font-size-body-sm);
+}
+
+.text-caption {
+  font-size: var(--font-size-caption);
+}

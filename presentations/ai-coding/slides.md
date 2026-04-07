@@ -12,9 +12,6 @@ tags: [AI, Coding, 工作流, 培训]
 slidesCount: 26
 estimatedTime: 90min
 status: draft
----
-
----
 src: ./slides/01-cover.md
 ---
 

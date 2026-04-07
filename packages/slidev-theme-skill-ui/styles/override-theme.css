@@ -1,0 +1,156 @@
+/**
+ * Theme Override - Editorial Warm Palette with Color Layers
+ *
+ * 设计理念：温暖的杂志风格配色，多层次色彩设计
+ * 使用深蓝墨水色作为主色，搭配温暖的背景和丰富的强调色
+ */
+
+:root {
+  /* ========== 主色系 - Ink Blue（墨水蓝） ========== */
+  --color-primary: #1A365D;
+  --color-primary-light: #EBF4FF;
+  --color-primary-dark: #0D2137;
+  --color-primary-muted: #2C5282;
+
+  /* 主色渐变 */
+  --color-primary-gradient: linear-gradient(135deg, #1A365D 0%, #2C5282 100%);
+
+  /* ========== 强调色系 - 丰富的色彩层次 ========== */
+  /* 橙色系 - 活力与行动 */
+  --color-accent-orange: #C05621;
+  --color-accent-orange-light: #FFEDD5;
+  --color-accent-orange-dark: #9C4221;
+
+  /* 金色系 - 成功与品质 */
+  --color-accent-gold: #B7791F;
+  --color-accent-gold-light: #FEF3C7;
+
+  /* 蓝绿色系 - 信息与连接 */
+  --color-accent-teal: #0D9488;
+  --color-accent-teal-light: #CCFBF1;
+
+  /* 玫红色系 - 重点标注 */
+  --color-accent-rose: #E11D48;
+  --color-accent-rose-light: #FFE4E6;
+
+  /* ========== 语义色 - 温暖调 ========== */
+  --color-success: #276749;
+  --color-success-light: #F0FFF4;
+  --color-success-gradient: linear-gradient(135deg, #276749 0%, #38A169 100%);
+
+  --color-warning: #C05621;
+  --color-warning-light: #FFFAF0;
+  --color-warning-gradient: linear-gradient(135deg, #C05621 0%, #DD6B20 100%);
+
+  --color-error: #C53030;
+  --color-error-light: #FFF5F5;
+  --color-error-gradient: linear-gradient(135deg, #C53030 0%, #E53E3E 100%);
+
+  --color-info: #2B6CB0;
+  --color-info-light: #EBF8FF;
+  --color-info-gradient: linear-gradient(135deg, #2B6CB0 0%, #4299E1 100%);
+
+  /* ========== 中性色 - Editorial 暖调 ========== */
+  --color-text-primary: #1A202C;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #718096;
+  --color-text-light: #A0AEC0;
+
+  /* 背景 - 温暖的米白色带渐变 */
+  --color-bg-page: #FFFBEB;
+  --color-bg-page-gradient: linear-gradient(180deg, #FFFBEB 0%, #FAF5E4 50%, #F5F0E0 100%);
+  --color-bg-card: #FFFFFF;
+  --color-bg-hover: #FEF3C7;
+  --color-bg-subtle: #FAF5E4;
+  --color-bg-alt: #F0E6D6;
+
+  /* 背景层次色 */
+  --color-bg-layer-1: #FFFFFF;
+  --color-bg-layer-2: #FFFBEB;
+  --color-bg-layer-3: #FAF5E4;
+  --color-bg-layer-4: #F0E6D6;
+
+  /* 边框 */
+  --color-border: #E2D8CC;
+  --color-border-light: #F0E6D6;
+  --color-border-accent: #C05621;
+
+  /* ========== 装饰色 ========== */
+  --color-gold: #B7791F;
+  --color-copper: #9C4221;
+  --color-ink: #1A365D;
+  --color-amber: #F59E0B;
+  --color-emerald: #059669;
+
+  /* ========== 阴影 - 温暖调 + 彩色阴影 ========== */
+  --shadow-xs: 0 1px 3px rgba(26, 32, 44, 0.08);
+  --shadow-sm: 0 4px 12px rgba(26, 32, 44, 0.12);
+  --shadow-md: 0 8px 24px rgba(26, 32, 44, 0.16);
+  --shadow-lg: 0 16px 48px rgba(26, 32, 44, 0.20);
+
+  /* 彩色阴影 */
+  --shadow-warm: 0 4px 20px rgba(192, 86, 21, 0.15);
+  --shadow-primary: 0 4px 20px rgba(26, 54, 93, 0.20);
+  --shadow-success: 0 4px 20px rgba(39, 103, 73, 0.15);
+  --shadow-info: 0 4px 20px rgba(43, 108, 176, 0.15);
+}
+
+/* ========== 暗色主题 - 深墨风格 ========== */
+
+html.dark {
+  /* 主色保持墨水蓝 */
+  --color-primary: #EBF4FF;
+  --color-primary-light: #1A365D;
+  --color-primary-dark: #F7FAFC;
+  --color-primary-muted: #90CDF4;
+  --color-primary-gradient: linear-gradient(135deg, #90CDF4 0%, #EBF4FF 100%);
+
+  /* 强调色在暗色模式调整 */
+  --color-accent-orange: #ED8936;
+  --color-accent-orange-light: #2D2A1E;
+  --color-accent-gold: #F6E05E;
+  --color-accent-gold-light: #2D2A1E;
+  --color-accent-teal: #5EEAD4;
+  --color-accent-teal-light: #0D3D3A;
+  --color-accent-rose: #FB7185;
+  --color-accent-rose-light: #3D1A1A;
+
+  /* 文字 */
+  --color-text-primary: #F7FAFC;
+  --color-text-secondary: #CBD5E0;
+  --color-text-muted: #A0AEC0;
+  --color-text-light: #718096;
+
+  /* 背景 - 深墨蓝带渐变 */
+  --color-bg-page: #0D1B2A;
+  --color-bg-page-gradient: linear-gradient(180deg, #0D1B2A 0%, #1B2838 50%, #1A202C 100%);
+  --color-bg-card: #1B2838;
+  --color-bg-hover: #2D3748;
+  --color-bg-subtle: #1A202C;
+  --color-bg-alt: #2D3748;
+
+  --color-bg-layer-1: #1B2838;
+  --color-bg-layer-2: #0D1B2A;
+  --color-bg-layer-3: #1A202C;
+  --color-bg-layer-4: #2D3748;
+
+  /* 边框 */
+  --color-border: #2D3748;
+  --color-border-light: #4A5568;
+  --color-border-accent: #ED8936;
+
+  /* 语义色 */
+  --color-success-light: #0D3D1F;
+  --color-warning-light: #3D2A0D;
+  --color-error-light: #3D1515;
+  --color-info-light: #1A2D4D;
+
+  /* 阴影 */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.20);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.30);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.50);
+
+  --shadow-warm: 0 4px 20px rgba(237, 137, 54, 0.20);
+  --shadow-primary: 0 4px 20px rgba(144, 205, 244, 0.20);
+}

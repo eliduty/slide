@@ -36,34 +36,42 @@ layout: Default
 .level-path {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 .level {
   display: flex;
-  gap: 0.75rem;
-  padding: 0.6rem;
-  background: var(--color-primary-light);
-  border-radius: var(--radius-sm);
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid;
 }
+.level:nth-child(1) { background: var(--color-success-light); border-color: var(--color-success); }
+.level:nth-child(2) { background: var(--color-info-light); border-color: var(--color-info); }
+.level:nth-child(3) { background: var(--color-accent-gold-light); border-color: var(--color-accent-gold); }
 .badge {
-  width: 50px;
-  padding: 0.3rem;
+  font-family: var(--font-family-display);
+  min-width: 50px;
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
   text-align: center;
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-card-meta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.beginner { background: var(--color-success); color: white; }
-.intermediate { background: var(--color-primary); color: white; }
-.advanced { background: #8b5cf6; color: white; }
-.content { flex: 1; font-size: 0.85rem; color: var(--color-text-primary); }
+.level:nth-child(1) .badge { background: var(--color-success); color: var(--color-bg-card); }
+.level:nth-child(2) .badge { background: var(--color-info); color: var(--color-bg-card); }
+.level:nth-child(3) .badge { background: var(--color-accent-gold); color: var(--color-bg-card); }
+.content { flex: 1; font-size: var(--font-size-card-body); color: var(--color-text-primary); }
 .path {
-  font-size: 0.75rem;
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-card-meta);
   color: var(--color-text-secondary);
-  margin-top: 0.2rem;
+  margin-top: var(--spacing-xs);
   background: var(--color-bg-hover);
-  padding: 0.2rem 0.5rem;
+  padding: 2px 8px;
   border-radius: var(--radius-sm);
 }
 </style>

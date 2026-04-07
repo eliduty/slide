@@ -48,35 +48,38 @@ layout: TwoCols
 .limitations {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--spacing-md);
 }
 .limit-item {
   display: flex;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  background: var(--color-primary-light);
-  border-radius: var(--radius-sm);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid;
 }
-.icon { font-size: 1.2rem; }
+.limit-item:nth-child(1) { background: var(--color-warning-light); border-color: var(--color-warning); }
+.limit-item:nth-child(2) { background: var(--color-error-light); border-color: var(--color-error); }
+.limit-item:nth-child(3) { background: var(--color-info-light); border-color: var(--color-info); }
+.icon { font-size: var(--font-size-heading); }
 .limit-item p {
-  font-size: 0.8rem;
+  font-size: var(--font-size-card-body);
   color: var(--color-text-secondary);
   margin: 0;
 }
 .question-box {
-  background: var(--color-info-light);
-  padding: 1rem;
+  background: var(--color-bg-subtle);
+  padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   border: 2px solid var(--color-primary);
 }
 .answer {
-  font-size: 0.9rem;
+  font-size: var(--font-size-card-title);
   color: var(--color-primary);
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-sm);
 }
 .hint {
-  font-size: 0.8rem;
+  font-size: var(--font-size-card-body);
   color: var(--color-text-secondary);
-  margin-top: 0.3rem;
+  margin-top: var(--spacing-sm);
 }
 </style>
