@@ -7,9 +7,9 @@ layout: cover
 基于职业素养测评项目实践的培训分享
 
 <div class="cover-footer">
- 2026
+ 研发中心-张骄龙
 </div>
-
+ 2026
 <!--
 各位同事大家好！
 
