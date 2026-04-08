@@ -21,11 +21,22 @@ layout: TwoCols
 
 ```
 team-ai-coding-toolkit/
-├── CLAUDE.md
-├── .claude/
-│   ├── rules/
-│   └── skills/
-└── docs/templates/
+├── CLAUDE.md              # 项目开发规则
+├── docs/
+│   ├── architecture/      # 架构设计
+│   ├── requirements/      # PRD、需求规范
+│   ├── design/            # UI/UX设计
+│   ├── standards/         # 技术规范
+│   ├── guides/            # 操作指南
+│   └── prompts/           # Prompt库
+├── openspec/
+│   ├── specs/             # 功能规格库
+│   └── changes/           # 变更追踪
+├── .agents/
+│   └── skills/            # Agent技能库
+└── .claude/
+    ├── rules/             # 开发规范检查
+    └── skills/            # Claude技能链接
 ```
 
 <style>

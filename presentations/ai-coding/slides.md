@@ -9,7 +9,7 @@ id: ai-coding
 created: 2026-04-07
 updated: 2026-04-07
 tags: [AI, Coding, 工作流, 培训]
-slidesCount: 28
+slidesCount: 29
 estimatedTime: 90min
 status: draft
 src: ./slides/01-cover.md
@@ -118,13 +118,17 @@ src: ./slides/25-assets.md
 ---
 
 ---
-src: ./slides/26-self-study.md
+src: ./slides/26-assets-full.md
 ---
 
 ---
-src: ./slides/27-summary.md
+src: ./slides/27-self-study.md
 ---
 
 ---
-src: ./slides/28-credits.md
+src: ./slides/28-summary.md
+---
+
+---
+src: ./slides/29-credits.md
 ---

@@ -9,7 +9,8 @@ layout: TwoCols
 <div class="boundary-list">
 
 <div class="boundary-card success">
-<div class="stage-badge">01 需求阶段</div>
+<div class="stage-number">01</div>
+<div class="stage-name"><span>需求</span><span>阶段</span></div>
 <div class="card-content">
 <div class="role-item">
 <span class="tag tag-ai">AI</span>
@@ -23,7 +24,8 @@ layout: TwoCols
 </div>
 
 <div class="boundary-card info">
-<div class="stage-badge">02 设计阶段</div>
+<div class="stage-number">02</div>
+<div class="stage-name"><span>设计</span><span>阶段</span></div>
 <div class="card-content">
 <div class="role-item">
 <span class="tag tag-ai">AI</span>
@@ -37,7 +39,8 @@ layout: TwoCols
 </div>
 
 <div class="boundary-card teal">
-<div class="stage-badge">03 环境规范</div>
+<div class="stage-number">03</div>
+<div class="stage-name"><span>环境</span><span>规范</span></div>
 <div class="card-content">
 <div class="role-item">
 <span class="tag tag-ai">AI</span>
@@ -51,7 +54,8 @@ layout: TwoCols
 </div>
 
 <div class="boundary-card warning">
-<div class="stage-badge">04 实现阶段</div>
+<div class="stage-number">04</div>
+<div class="stage-name"><span>实现</span><span>阶段</span></div>
 <div class="card-content">
 <div class="role-item">
 <span class="tag tag-ai">AI</span>
@@ -94,6 +98,8 @@ AI 可以帮你生成方案、生成代码，但决策——做什么、不做�
   border: 1px solid;
   display: flex;
   align-items: stretch;
+  gap: 0;
+  overflow: hidden;
 }
 
 .boundary-card.success { background: var(--color-success-light); border-color: var(--color-success); }
@@ -101,23 +107,46 @@ AI 可以帮你生成方案、生成代码，但决策——做什么、不做�
 .boundary-card.teal { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
 .boundary-card.warning { background: var(--color-warning-light); border-color: var(--color-warning); }
 
-.stage-badge {
+.stage-number {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-card-meta);
-  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 18px;
+  padding: var(--spacing-xs) 6px;
   color: var(--color-bg-card);
   display: flex;
   align-items: center;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  justify-content: center;
   min-width: 32px;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
 }
 
-.boundary-card.success .stage-badge { background: var(--color-success); }
-.boundary-card.info .stage-badge { background: var(--color-info); }
-.boundary-card.teal .stage-badge { background: var(--color-accent-teal); }
-.boundary-card.warning .stage-badge { background: var(--color-warning); }
+.boundary-card.success .stage-number { background: var(--color-success); }
+.boundary-card.info .stage-number { background: var(--color-info); }
+.boundary-card.teal .stage-number { background: var(--color-accent-teal); }
+.boundary-card.warning .stage-number { background: var(--color-warning); }
+
+.stage-name {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: 15px;
+  padding: 4px 6px;
+  color: var(--color-bg-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  gap: 0;
+}
+
+.stage-name span {
+  display: block;
+}
+
+.boundary-card.success .stage-name { background: var(--color-success); }
+.boundary-card.info .stage-name { background: var(--color-info); }
+.boundary-card.teal .stage-name { background: var(--color-accent-teal); }
+.boundary-card.warning .stage-name { background: var(--color-warning); }
 
 .card-content {
   padding: var(--spacing-xs) var(--spacing-sm);

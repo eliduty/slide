@@ -9,7 +9,7 @@ layout: Default
 <div class="review-card">
 <div class="review-type">需求评审</div>
 <div class="review-focus">
-<strong>验证AI推演结果的业务准确性</strong>
+<strong>验证AI推演结果的准确性</strong>
 <p>AI补充的细节是否符合业务预期</p>
 </div>
 </div>
@@ -57,6 +57,7 @@ layout: Default
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-card-meta);
   display: inline-block;
+  margin-bottom: var(--spacing-lg);
 }
 .review-card:nth-child(1) .review-type { background: var(--color-info); color: var(--color-bg-card); }
 .review-card:nth-child(2) .review-type { background: var(--color-success); color: var(--color-bg-card); }
