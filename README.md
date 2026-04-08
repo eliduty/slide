@@ -13,18 +13,35 @@
 
 ```
 slide/
-├── presentations/          # 各演示文稿
-│   └── _template/          # 新演示模板
-│       ├── slides.md       # 入口 + 元数据
-│       ├── slides/         # 内容拆分
-│       ├── workspace/      # 素材工作区
-│       ├── public/         # 最终资源
-│       └── archive/        # 版本归档
-├── assets-shared/          # 全局共享素材
-├── theme-shared/           # 共享主题
-├── docs/                   # 项目文档
+├── workspace/                   # 工作区（存放所有工作素材）
+│   └── ai-coding/               # AI Coding 演示的工作内容
+│       ├── content.md           # 内容草稿
+│       ├── design.md            # 设计思路
+│       ├── examples.md          # 示例收集
+│       ├── notes.md             # 笔记整理
+│       ├── references.md        # 参考资料
+│       ├── research.md          # 调研笔记
+│       ├── outline/             # 大纲目录
+│       ├── scripts/             # 演讲脚本（逐字稿）
+│       ├── drafts/              # 原始草稿文件
+│       └── images/              # 图片素材
+├── presentations/               # 演示文稿（AI生成的最终产出）
+│   ├── _template/               # 新演示模板
+│   ├── ai-coding-v1/            # AI Coding 版本1
+│   ├── ai-coding-v2/            # AI Coding 版本2
+│   └── ai-coding-v3/            # AI Coding 版本3
+├── packages/                    # 共享主题包
+│   └── slidev-theme-skill-ui/
+├── assets-shared/               # 全局共享素材
+├── docs/                        # 项目文档
 └── README.md
 ```
+
+## 工作流程
+
+1. **工作阶段**：在 `workspace/` 目录中准备素材和内容
+2. **生成阶段**：使用 AI 从 workspace 内容生成 slides 到 `presentations/`
+3. **迭代阶段**：同一工作内容可生成多个版本的 slides（v1, v2, v3 等）
 
 ## 共享组件
 
@@ -49,6 +66,9 @@ pnpm build:template
 
 ## 创建新演示
 
-1. 复制 `presentations/_template/` 为新目录
-2. 更新 `slides.md` 的元数据（id、title、tags 等）
-3. 在 README.md 演示列表中添加新条目
+1. 在 `workspace/` 创建新的工作目录（如 `workspace/<topic>/`）
+2. 在工作目录中准备素材（content.md、outline、scripts 等）
+3. 在 `presentations/` 创建新的版本目录（如 `presentations/<topic-v1>/`）
+4. 复制 `presentations/_template/` 的结构到新版本目录
+5. 使用 AI 从 workspace 内容生成 slides
+6. 在 README.md 演示列表中添加新条目

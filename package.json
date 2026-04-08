@@ -12,7 +12,10 @@
     "export:ai-coding-v1": "cd presentations/ai-coding-v1 && slidev export",
     "dev:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev --remote --bind",
     "build:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev build",
-    "export:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev export"
+    "export:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev export",
+    "dev:ai-coding-v3": "cd presentations/ai-coding-v3 && slidev --remote --bind",
+    "build:ai-coding-v3": "cd presentations/ai-coding-v3 && slidev build",
+    "export:ai-coding-v3": "cd presentations/ai-coding-v3 && slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.50.0",

@@ -31,80 +31,63 @@ pnpm export:ai-coding
 
 ```
 slide/
-├── presentations/              # 各演示文稿
-│   └── _template/              # 新演示模板
-│       ├── slides.md           # 入口文件 + 元数据
-│       ├── slides/             # 拆分的内容文件
-│       └── workspace/          # 素材工作区
+├── workspace/                   # 工作区（存放所有工作素材）
+│   └── ai-coding/               # AI Coding 演示的工作内容
+│       ├── content.md           # 内容草稿
+│       ├── design.md            # 设计思路
+│       ├── examples.md          # 示例收集
+│       ├── notes.md             # 笔记整理
+│       ├── references.md        # 参考资料
+│       ├── research.md          # 调研笔记
+│       ├── outline/             # 大纲目录
+│       ├── scripts/             # 演讲脚本（逐字稿）
+│       ├── drafts/              # 原始草稿文件
+│       └── images/              # 图片素材
+├── presentations/               # 演示文稿（AI生成的最终产出）
+│   ├── _template/               # 新演示模板
+│   │   ├── slides.md            # 入口文件 + 元数据
+│   │   └── slides/              # 拆分的内容文件
+│   ├── ai-coding-v1/            # AI Coding 版本1
+│   ├── ai-coding-v2/            # AI Coding 版本2
+│   └── ai-coding-v3/            # AI Coding 版本3
 ├── packages/
-│   └── slidev-theme-skill-ui/  # 共享主题包
-│       ├── layouts/            # 布局组件
-│       ├── components/         # 通用组件
-│       └── styles/             # 样式文件
-├── docs/                       # 项目规范文档
-│   ├── project-structure.md    # 目录结构设计
-│   ├── metadata-spec.md        # 元数据规范
-│   ├── workspace-spec.md       # 工作区规范
-│   └── ui-spec/                # UI 设计规范
-└── assets-shared/              # 全局共享素材（按需创建）
+│   └── slidev-theme-skill-ui/   # 共享主题包
+│       ├── layouts/             # 布局组件
+│       ├── components/          # 通用组件
+│       └── styles/              # 样式文件
+├── docs/                        # 项目规范文档
+│   ├── project-structure.md     # 目录结构设计
+│   ├── metadata-spec.md         # 元数据规范
+│   ├── workspace-spec.md        # 工作区规范
+│   └── ui-spec/                 # UI 设计规范
+└── assets-shared/               # 全局共享素材（按需创建）
 ```
 
 ## 创建新演示
 
-1. 复制 `presentations/_template/` 为新目录
-2. 更新 `slides.md` 的 frontmatter 元数据（id、title、tags、status 等）
-3. 在 package.json 添加对应的 npm scripts
-4. 在 README.md 演示列表表格中添加新条目
+1. 在 `workspace/` 创建新的工作目录（如 `workspace/<topic>/`）
+2. 在 `presentations/` 创建新的版本目录（如 `presentations/<topic-v1>/`）
+3. 复制 `presentations/_template/` 的结构到新版本目录
+4. 更新 `slides.md` 的 frontmatter 元数据（id、title、tags、status 等）
+5. 在 package.json 添加对应的 npm scripts
+6. 在 README.md 演示列表表格中添加新条目
 
-## slides.md 元数据规范
+## 工作与产出分离
 
-每个演示的 slides.md 入口文件包含演示级元数据：
-
-```yaml
----
-# Slidev 配置
-theme: ../../packages/slidev-theme-skill-ui
-title: 演示标题
-author: eliduty
-aspectRatio: 16/9
-
-# 自定义元数据
-id: unique-id            # 与目录名一致
-created: 2026-03-28
-updated: 2026-03-28
-tags: [tag1, tag2]
-slidesCount: 12
-estimatedTime: 15min
-status: draft            # draft/reviewing/ready/published
----
-```
-
-## 主题使用
-
-主题路径为相对路径：`../../packages/slidev-theme-skill-ui`
-
-可用布局：
-- `Cover` - 封面页
-- `Default` - 默认布局
-- `Section` - 章节分隔页
-- `TwoCols` - 双栏布局
-- `TopTitle` - 顶部标题布局
-- `Quote` - 引用布局
-- `Credits` - 结尾页
-
-可用组件：
-- `Admonition` - 提示框
-- `Badge` - 标签徽章
-- `CodeBlock` - 代码块
-- `QRCode` - 二维码
+- **workspace/ 目录**：存放所有工作素材（调研、笔记、大纲、脚本等）
+- **presentations/ 目录**：只存放 AI 生成的最终 slides 产出
+- **多版本管理**：同一个工作内容可以生成多个版本的 slides（v1, v2, v3 等）
 
 ## workspace 目录用途
 
-每个演示的 workspace/ 存放工作素材，与最终产出分离：
-- `research.md` - 调研笔记
-- `outline.md` - 大纲草稿
+工作区存放演示的工作素材：
+- `content.md` - 内容草稿
+- `design.md` - 设计思路
+- `examples.md` - 示例收集
+- `notes.md` - 笔记整理
 - `references.md` - 参考资料
+- `research.md` - 调研笔记
+- `outline/` - 大纲目录
 - `scripts/` - 演讲脚本（逐字稿）
-- `data/` - 数据源文件
-- `drafts/` - 原始草稿
-- `feedback.md` - 反馈记录
+- `drafts/` - 原始草稿文件
+- `images/` - 图片素材
