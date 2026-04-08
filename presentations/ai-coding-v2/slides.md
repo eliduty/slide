@@ -7,7 +7,7 @@ aspectRatio: 16/9
 # 自定义元数据
 id: ai-coding
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 tags: [AI, Coding, 工作流, 培训]
 slidesCount: 29
 estimatedTime: 90min
@@ -53,50 +53,50 @@ src: ./slides/09-chapter2-boundary.md
 src: ./slides/10-chapter2-env.md
 ---
 
-<!-- 第3章 -->
----
-src: ./slides/11-chapter3-section.md
----
-
----
-src: ./slides/12-chapter3-pm.md
----
-
----
-src: ./slides/13-chapter3-sdeqa.md
----
-
----
-src: ./slides/14-chapter3-review.md
----
-
----
-src: ./slides/15-chapter3-summary.md
----
-
 <!-- 第4章 -->
 ---
-src: ./slides/16-chapter4-section.md
+src: ./slides/11-chapter4-section.md
 ---
 
 ---
-src: ./slides/17-chapter4-requirement.md
+src: ./slides/12-chapter4-requirement.md
 ---
 
 ---
-src: ./slides/18-chapter4-design.md
+src: ./slides/13-chapter4-design.md
 ---
 
 ---
-src: ./slides/19-chapter4-implementation.md
+src: ./slides/14-chapter4-implementation.md
 ---
 
 ---
-src: ./slides/20-chapter4-global.md
+src: ./slides/15-chapter4-global.md
 ---
 
 ---
-src: ./slides/21-chapter4-context.md
+src: ./slides/16-chapter4-context.md
+---
+
+<!-- 第3章 -->
+---
+src: ./slides/17-chapter3-section.md
+---
+
+---
+src: ./slides/18-chapter3-pm.md
+---
+
+---
+src: ./slides/19-chapter3-sdeqa.md
+---
+
+---
+src: ./slides/20-chapter3-review.md
+---
+
+---
+src: ./slides/21-chapter3-summary.md
 ---
 
 <!-- 第5章 -->

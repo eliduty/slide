@@ -7,9 +7,12 @@
     "dev:template": "cd presentations/_template && slidev --remote --bind",
     "build:template": "cd presentations/_template && slidev build",
     "export:template": "cd presentations/_template && slidev export",
-    "dev:ai-coding": "cd presentations/ai-coding && slidev --remote --bind",
-    "build:ai-coding": "cd presentations/ai-coding && slidev build",
-    "export:ai-coding": "cd presentations/ai-coding && slidev export"
+    "dev:ai-coding-v1": "cd presentations/ai-coding-v1 && slidev --remote --bind",
+    "build:ai-coding-v1": "cd presentations/ai-coding-v1 && slidev build",
+    "export:ai-coding-v1": "cd presentations/ai-coding-v1 && slidev export",
+    "dev:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev --remote --bind",
+    "build:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev build",
+    "export:ai-coding-v2": "cd presentations/ai-coding-v2 && slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.50.0",

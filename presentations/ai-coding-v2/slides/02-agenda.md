@@ -24,13 +24,13 @@ layout: TwoCols
 </div>
 
 <div class="agenda-item">
-<span class="time">10min</span>
-<span class="content">第3章 · 对现有工作的影响</span>
+<span class="time">25min</span>
+<span class="content">第3章 · 工具在各阶段的应用</span>
 </div>
 
 <div class="agenda-item">
-<span class="time">25min</span>
-<span class="content">第4章 · 工具在各阶段的应用</span>
+<span class="time">15min</span>
+<span class="content">第4章 · 对现有工作的影响</span>
 </div>
 
 <div class="agenda-item">
@@ -99,10 +99,10 @@ layout: TwoCols
 今天的议程分为五个部分：
 
 1. **AI Coding 工具的真实能力**——它能做什么、不能做什么
-2. **AI Coding的标准工作流**——我们总结出的三阶段工作流
-3. **对现有工作的影响**——PM、SDE、QA 各自的变化
-4. **工具在各阶段的应用**——每个阶段具体怎么用 AI
-5. **常见场景实操**——遇到问题怎么处理
+2. **AI Coding的标准工作流**——我们总结出的四阶段工作流
+3. **工具在各阶段的应用**——每个阶段具体怎么用 AI
+4. **对现有工作的影响**——PM、SDE、QA 各自的角色转变
+5. **常见场景实操**——遗留项目、新项目怎么处理
 
 好，我们开始。
 -->
