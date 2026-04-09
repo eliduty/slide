@@ -1,90 +1,237 @@
 ---
-layout: Default
+layout: TwoCols
 ---
+
+::left::
 
 # 1.4 人机协作边界
 
-<div class="boundary-grid">
+<div class="boundary-list">
 
-<div class="phase-row">
-<div class="phase-name">需求阶段</div>
-<div class="human-task">人定目标</div>
-<div class="ai-task">AI 推演细节</div>
+<div class="boundary-card success">
+<div class="stage-number">01</div>
+<div class="stage-name"><span>需求</span><span>阶段</span></div>
+<div class="card-content">
+<div class="role-item">
+<span class="tag tag-human">人</span>
+<span class="text">定目标——业务目标、验收标准</span>
+</div>
+<div class="role-item">
+<span class="tag tag-ai">AI</span>
+<span class="text">推演细节——补充场景、完善描述</span>
+</div>
+</div>
 </div>
 
-<div class="phase-row">
-<div class="phase-name">设计阶段</div>
-<div class="human-task">人做决策</div>
-<div class="ai-task">AI 生成方案</div>
+<div class="boundary-card info">
+<div class="stage-number">02</div>
+<div class="stage-name"><span>设计</span><span>阶段</span></div>
+<div class="card-content">
+<div class="role-item">
+<span class="tag tag-human">人</span>
+<span class="text">做决策——技术选型、架构边界</span>
+</div>
+<div class="role-item">
+<span class="tag tag-ai">AI</span>
+<span class="text">生成方案——技术方案、接口契约</span>
+</div>
+</div>
 </div>
 
-<div class="phase-row">
-<div class="phase-name">实现阶段</div>
-<div class="human-task">人定规范</div>
-<div class="ai-task">AI 执行生成</div>
+<div class="boundary-card teal">
+<div class="stage-number">03</div>
+<div class="stage-name"><span>实现</span><span>阶段</span></div>
+<div class="card-content">
+<div class="role-item">
+<span class="tag tag-human">人</span>
+<span class="text">定规范——编码规范、测试策略</span>
+</div>
+<div class="role-item">
+<span class="tag tag-ai">AI</span>
+<span class="text">执行生成——按规范生成代码</span>
+</div>
+</div>
 </div>
 
-<div class="phase-row">
-<div class="phase-name">验证阶段</div>
-<div class="human-task">人把控质量</div>
-<div class="ai-task">AI 辅助测试</div>
+<div class="boundary-card warning">
+<div class="stage-number">04</div>
+<div class="stage-name"><span>验证</span><span>阶段</span></div>
+<div class="card-content">
+<div class="role-item">
+<span class="tag tag-human">人</span>
+<span class="text">把控质量——验证是否满足规格</span>
+</div>
+<div class="role-item">
+<span class="tag tag-ai">AI</span>
+<span class="text">辅助测试——生成用例、执行测试</span>
+</div>
+</div>
 </div>
 
 </div>
 
-<div class="boundary-rule">
-<strong>核心原则：</strong> 决策在人，执行在AI。人定义"是什么"，AI 执行"怎么做"。
+::right::
+
+<div class="principle-panel">
+<div class="principle-header">核心原则</div>
+<div class="principle-main">决策在人<br/>执行在AI</div>
+<div class="principle-divider"></div>
+<div class="principle-explain">
+人定义<strong>"是什么"</strong><br/>
+AI 执行<strong>"怎么做"</strong>
+</div>
+<div class="principle-note">
+<div class="note-item">这个边界不能模糊</div>
+<div class="note-item">把决策交给 AI，结果就会失控</div>
+</div>
 </div>
 
 <style>
-.boundary-grid {
+.boundary-list {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
-.phase-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm);
+
+.boundary-card {
   border-radius: var(--radius-md);
-  background: var(--color-bg-subtle);
+  border: 1px solid;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  overflow: hidden;
 }
-.phase-row:nth-child(1) { border-left: 4px solid var(--color-success); }
-.phase-row:nth-child(2) { border-left: 4px solid var(--color-info); }
-.phase-row:nth-child(3) { border-left: 4px solid var(--color-accent-teal); }
-.phase-row:nth-child(4) { border-left: 4px solid var(--color-warning); }
-.phase-name {
+
+.boundary-card.success { background: var(--color-success-light); border-color: var(--color-success); }
+.boundary-card.info { background: var(--color-info-light); border-color: var(--color-info); }
+.boundary-card.teal { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
+.boundary-card.warning { background: var(--color-warning-light); border-color: var(--color-warning); }
+
+.stage-number {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  padding: var(--spacing-xs) 6px;
+  color: var(--color-bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+.boundary-card.success .stage-number { background: var(--color-success); }
+.boundary-card.info .stage-number { background: var(--color-info); }
+.boundary-card.teal .stage-number { background: var(--color-accent-teal); }
+.boundary-card.warning .stage-number { background: var(--color-warning); }
+
+.stage-name {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: 15px;
+  padding: 4px 6px;
+  color: var(--color-bg-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  gap: 0;
+}
+
+.stage-name span {
+  display: block;
+}
+
+.boundary-card.success .stage-name { background: var(--color-success); }
+.boundary-card.info .stage-name { background: var(--color-info); }
+.boundary-card.teal .stage-name { background: var(--color-accent-teal); }
+.boundary-card.warning .stage-name { background: var(--color-warning); }
+
+.card-content {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  flex: 1;
+}
+
+.role-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 2px 0;
+}
+
+.tag {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-card-title);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--color-bg-card);
+  min-width: 36px;
+  text-align: center;
+}
+
+.tag-ai { background: var(--color-primary); }
+.tag-human { background: var(--color-text-primary); }
+
+.text {
+  font-size: var(--font-size-card-meta);
   color: var(--color-text-primary);
 }
-.human-task {
-  background: var(--color-primary-light);
-  padding: var(--spacing-xs);
-  border-radius: var(--radius-sm);
+
+.principle-panel {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2D4BC7 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  color: var(--color-bg-card);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.principle-header {
+  font-family: var(--font-family-display);
   font-size: var(--font-size-card-body);
-  color: var(--color-primary);
+  opacity: 0.9;
+  margin-bottom: var(--spacing-xs);
+}
+
+.principle-main {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-tight);
   text-align: center;
 }
-.ai-task {
-  background: var(--color-accent-teal-light);
-  padding: var(--spacing-xs);
-  border-radius: var(--radius-sm);
-  font-size: var(--font-size-card-body);
-  color: var(--color-accent-teal);
-  text-align: center;
+
+.principle-divider {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: var(--spacing-sm) 0;
 }
-.boundary-rule {
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-md);
-  background: var(--color-accent-orange-light);
+
+.principle-explain {
+  font-size: var(--font-size-card-body);
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+  opacity: 0.95;
+}
+
+.principle-note {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm);
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--color-accent-orange);
-  font-size: var(--font-size-card-body);
-  color: var(--color-text-primary);
+  background: rgba(255,255,255,0.1);
+}
+
+.note-item {
+  font-size: var(--font-size-card-meta);
+  opacity: 0.9;
+  margin-bottom: 2px;
 }
 </style>
 
