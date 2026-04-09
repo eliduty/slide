@@ -6,7 +6,7 @@ layout: Default
 
 <div class="stage-detail">
 
-<div class="stage-header teal">
+<div class="stage-header">
 <div class="stage-title">环境规范阶段</div>
 <div class="stage-flow">配置 CLAUDE.md → 配置 rules → 验证上下文</div>
 </div>
@@ -53,15 +53,13 @@ layout: Default
 
 <style>
 .stage-detail {
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
 .stage-header {
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
-}
-.stage-header.teal {
-  background: var(--color-accent-teal);
+  background: #0F4C4C;
 }
 .stage-title {
   font-family: var(--font-family-display);
@@ -70,37 +68,47 @@ layout: Default
   color: #FFFFFF;
 }
 .stage-flow {
-  font-size: var(--font-size-card-body);
+  font-size: var(--font-size-body);
   color: #F7FAFC;
-  margin-top: var(--spacing-xs);
+  margin-top: 4px;
 }
 .stage-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xs);
 }
 .stage-row {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  padding: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   background: var(--color-bg-subtle);
 }
 .row-label {
+  flex-shrink: 0;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: #0F4C4C;
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 .row-content {
+  flex: 1;
+  padding-top: 2px;
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
+  line-height: 1.4;
 }
 .warning-box {
-  margin-top: var(--spacing-md);
-  padding: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
   background: var(--color-warning-light);
   border-radius: var(--radius-md);
   border-left: 4px solid var(--color-warning);
-  font-size: var(--font-size-card-body);
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
 }
 </style>

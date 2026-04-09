@@ -8,7 +8,7 @@ layout: Default
 
 <div class="stage-header orange">
 <div class="stage-title">实现阶段</div>
-<div class="stage-flow">按 tasks 执行 → 生成代码 → 运行测试 → 质量验证</div>
+<div class="stage-flow"> apply → archive</div>
 </div>
 
 <div class="stage-grid">
@@ -49,15 +49,15 @@ layout: Default
 
 <style>
 .stage-detail {
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
 .stage-header {
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
 }
 .stage-header.orange {
-  background: var(--color-accent-orange);
+  background: #7B3F00;
 }
 .stage-title {
   font-family: var(--font-family-display);
@@ -66,36 +66,46 @@ layout: Default
   color: #FFFFFF;
 }
 .stage-flow {
-  font-size: var(--font-size-card-body);
+  font-size: var(--font-size-body);
   color: #F7FAFC;
-  margin-top: var(--spacing-xs);
+  margin-top: 4px;
 }
 .stage-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xs);
 }
 .stage-row {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  padding: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   background: var(--color-bg-subtle);
 }
 .row-label {
+  flex-shrink: 0;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: #7B3F00;
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 .row-content {
+  flex: 1;
+  padding-top: 2px;
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
+  line-height: 1.4;
 }
 </style>
 
 <!--
 实现阶段的详细定义：
 
-**流程**：按 tasks 执行 → 生成代码 → 运行测试 → 质量验证
+**流程**：apply 按 tasks 执行 → 生成代码 → 运行测试 → 质量验证，最后归档需求。
 
 **负责**：SDE
 
@@ -116,5 +126,5 @@ layout: Default
 
 Superpowers TDD 会强制要求先生成测试再生成代码，确保测试覆盖。
 
-这是实现阶段的定义。具体怎么用 AI 工具？让我们看下一页。
+这是实现阶段的定义。具体 AI 工具可以帮我们完成哪些任务呢？让我们看下一页。
 -->

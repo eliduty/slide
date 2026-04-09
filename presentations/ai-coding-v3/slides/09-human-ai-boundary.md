@@ -113,7 +113,7 @@ AI 执行<strong>"怎么做"</strong>
   font-weight: var(--font-weight-semibold);
   font-size: 18px;
   padding: var(--spacing-xs) 6px;
-  color: var(--color-bg-card);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +131,7 @@ AI 执行<strong>"怎么做"</strong>
   font-weight: var(--font-weight-semibold);
   font-size: 15px;
   padding: 4px 6px;
-  color: var(--color-bg-card);
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,15 +176,15 @@ AI 执行<strong>"怎么做"</strong>
 .tag-human { background: var(--color-text-primary); }
 
 .text {
-  font-size: var(--font-size-card-meta);
+  font-size: var(--font-size-card-body);
   color: var(--color-text-primary);
 }
 
 .principle-panel {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2D4BC7 100%);
+  background: linear-gradient(135deg, #1A365D 0%, #0D2137 100%);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  color: var(--color-bg-card);
+  color: #FFFFFF;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -195,8 +195,9 @@ AI 执行<strong>"怎么做"</strong>
 .principle-header {
   font-family: var(--font-family-display);
   font-size: var(--font-size-card-body);
-  opacity: 0.9;
+  color: #90CDF4;
   margin-bottom: var(--spacing-xs);
+  letter-spacing: 2px;
 }
 
 .principle-main {
@@ -205,12 +206,14 @@ AI 执行<strong>"怎么做"</strong>
   font-size: var(--font-size-heading);
   line-height: var(--line-height-tight);
   text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .principle-divider {
   width: 60px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   margin: var(--spacing-sm) 0;
 }
 
@@ -218,19 +221,25 @@ AI 执行<strong>"怎么做"</strong>
   font-size: var(--font-size-card-body);
   line-height: var(--line-height-relaxed);
   text-align: center;
-  opacity: 0.95;
+  color: #E2E8F0;
+}
+
+.principle-explain strong {
+  color: #FED7AA;
+  font-weight: var(--font-weight-semibold);
 }
 
 .principle-note {
   margin-top: var(--spacing-sm);
   padding: var(--spacing-sm);
   border-radius: var(--radius-md);
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.15);
+  border-left: 3px solid #FED7AA;
 }
 
 .note-item {
-  font-size: var(--font-size-card-meta);
-  opacity: 0.9;
+  font-size: var(--font-size-card-body);
+  color: #CBD5E0;
   margin-bottom: 2px;
 }
 </style>

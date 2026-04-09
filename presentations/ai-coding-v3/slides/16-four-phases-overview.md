@@ -17,7 +17,7 @@ layout: Default
 <div class="phase-box">
 <div class="phase-num">02</div>
 <div class="phase-name">设计阶段</div>
-<div class="phase-desc">propose → explore → apply → archive</div>
+<div class="phase-desc">explore →propose</div>
 </div>
 
 <div class="flow-arrow">→</div>
@@ -33,7 +33,7 @@ layout: Default
 <div class="phase-box">
 <div class="phase-num">04</div>
 <div class="phase-name">实现阶段</div>
-<div class="phase-desc">按 tasks 执行 → 生成代码 → 测试验证</div>
+<div class="phase-desc">apply → archive</div>
 </div>
 
 </div>
@@ -94,14 +94,14 @@ layout: Default
 </style>
 
 <!--
-四阶段工作流程：
+首先我们总览一下所有的阶段：
 
 **01 需求阶段**
 流程：需求推演 → 结构化描述 → PRD 文档
 这个阶段把模糊的想法变成明确的需求文档。
 
 **02 设计阶段**
-流程：propose → explore → apply → archive
+流程：explore →propose 
 这个阶段生成技术规范，经过评审后执行。
 
 **03 环境规范阶段**
@@ -109,13 +109,13 @@ layout: Default
 这个阶段让 AI 理解项目上下文，是最容易被跳过的阶段。
 
 **04 实现阶段**
-流程：按 tasks 执行 → 生成代码 → 测试验证
+流程：apply → archive
 这个阶段按规范执行，生成代码和测试。
 
 **关键原则**：
-- 每个阶段用 5W1H 定义
-- 顺序不能乱
-- 跳过环境规范阶段是最常见错误
+- 每个阶段我们都可以用 5W1H 定义，谁参与、做什么、标准、产出、如何做。
+- 上面的顺序不能乱，特别是需求、设计、实现的顺序。
+- 跳过环境规范阶段是最常见错误。
 
 接下来，我们逐个阶段详细展开。先看需求阶段。
 -->

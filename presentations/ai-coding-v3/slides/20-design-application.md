@@ -77,18 +77,18 @@ layout: Default
 .app-title {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-medium);
-  font-size: 14px;
+  font-size: 20px;
   color: var(--color-text-primary);
   margin-bottom: 2px;
 }
 .app-desc {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--color-text-secondary);
   line-height: 1.3;
 }
 .bottom-row {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-sm);
   margin-top: var(--spacing-sm);
 }
@@ -107,7 +107,7 @@ layout: Default
 </style>
 
 <!--
-设计阶段具体怎么用 AI 工具？6个核心应用：
+设计阶段可以用 AI 工具完成：
 
 **01. 架构设计**：目录结构、模块划分、依赖关系
 

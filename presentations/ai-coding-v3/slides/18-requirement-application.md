@@ -7,33 +7,46 @@ layout: Default
 <div class="app-grid">
 
 <div class="app-item">
+<div class="app-header">
 <div class="app-num">01</div>
 <div class="app-title">需求推演完善</div>
+</div>
 <div class="app-desc">基于少量需求描述，AI 帮你推演补充可能遗漏的场景和边界情况</div>
 </div>
 
 <div class="app-item">
+<div class="app-header">
 <div class="app-num">02</div>
 <div class="app-title">结构化描述</div>
-<div class="app-desc">把模糊的想法转换成结构化的 Markdown 文档，便于评审和传承</div>
+</div>
+<div class="app-desc">把模糊的想法转换成结构化的 Markdown 文档</div>
 </div>
 
 <div class="app-item">
+<div class="app-header">
 <div class="app-num">03</div>
 <div class="app-title">界面原型生成</div>
-<div class="app-desc">快速生成可交互原型，验证产品方向，加速需求确认</div>
+</div>
+<div class="app-desc">快速生成可交互原型，验证产品方向</div>
 </div>
 
 <div class="app-item">
+<div class="app-header">
 <div class="app-num">04</div>
 <div class="app-title">需求文档生成</div>
-<div class="app-desc">根据结构化描述自动生成 PRD 文档，确保格式规范</div>
+</div>
+<div class="app-desc">根据结构化描述自动生成 PRD 文档</div>
 </div>
 
 </div>
 
-<div class="tool-tip">
-<strong>配合工具：</strong>Superpowers brainstorm——精炼需求，避免理解偏差
+<div class="bottom-row">
+<div class="output-box">
+<strong>核心产出：</strong>结构化需求描述 + PRD 文档
+</div>
+<div class="tool-box">
+<strong>配合工具：</strong>Superpowers brainstorm
+</div>
 </div>
 
 <style>
@@ -49,36 +62,51 @@ layout: Default
   border: 1px solid var(--color-border);
   background: var(--color-bg-subtle);
 }
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
 .app-num {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-heading);
+  font-size: 18px;
   color: var(--color-success);
-  margin-bottom: var(--spacing-xs);
 }
 .app-title {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-card-title);
+  font-size: 20px;
   color: var(--color-text-primary);
-  margin-bottom: var(--spacing-xs);
 }
 .app-desc {
-  font-size: var(--font-size-card-body);
+  font-size: 14px;
   color: var(--color-text-secondary);
+  line-height: 1.5;
 }
-.tool-tip {
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-md);
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+.output-box {
+  padding: var(--spacing-sm) var(--spacing-md);
   background: var(--color-success-light);
   border-radius: var(--radius-md);
-  font-size: var(--font-size-card-body);
-  color: var(--color-text-primary);
+  font-size: 14px;
+}
+.tool-box {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-accent-gold-light);
+  border-radius: var(--radius-md);
+  font-size: 14px;
 }
 </style>
 
 <!--
-需求阶段具体怎么用 AI 工具？
+需求阶段可以用 AI 工具帮我们完成：
 
 **01. 需求推演完善**
 

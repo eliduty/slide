@@ -8,7 +8,7 @@ layout: Default
 
 <div class="stage-header info">
 <div class="stage-title">设计阶段</div>
-<div class="stage-flow">propose → explore → apply → archive</div>
+<div class="stage-flow">propose → explore</div>
 </div>
 
 <div class="stage-grid">
@@ -49,15 +49,15 @@ layout: Default
 
 <style>
 .stage-detail {
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
 .stage-header {
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
 }
 .stage-header.info {
-  background: var(--color-info);
+  background: #1E3A5F;
 }
 .stage-title {
   font-family: var(--font-family-display);
@@ -66,42 +66,50 @@ layout: Default
   color: #FFFFFF;
 }
 .stage-flow {
-  font-size: var(--font-size-card-body);
+  font-size: var(--font-size-body);
   color: #F7FAFC;
-  margin-top: var(--spacing-xs);
+  margin-top: 4px;
 }
 .stage-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xs);
 }
 .stage-row {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  padding: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   background: var(--color-bg-subtle);
 }
 .row-label {
+  flex-shrink: 0;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: #1E3A5F;
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 .row-content {
+  flex: 1;
+  padding-top: 2px;
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
+  line-height: 1.4;
 }
 </style>
 
 <!--
 设计阶段的详细定义：
 
-**流程**：propose → explore → apply → archive
+**流程**：propose → explore 
 
-这是 OpenSpec 的核心工作流：
-- propose：提出变更，生成 proposal.md
-- explore：探索设计，生成 design.md 和 specs
-- apply：执行任务，按 tasks.md 实施
-- archive：归档沉淀
+这是 OpenSpec 的核心工作流的一部分：
+- explore：探索设计，
+- propose：提出变更，生成 design.md 和 specs、proposal.md、tasks.md
 
 **负责**：SDE 主导 + PM 参与
 

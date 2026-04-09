@@ -24,8 +24,8 @@ layout: Default
 <span class="level-title">中级：能判质量</span>
 </div>
 <div class="level-body">
-<div class="level-check">✓ 参考变更案例，独立完成简单变更</div>
-<div class="level-check">✓ 能判断 AI 输出是否符合业务预期</div>
+<div class="level-check">✓ 参考案例，独立完成简单变更</div>
+<div class="level-check">✓ 能判断 AI 输出是否符合预期</div>
 <div class="level-check">✓ 能写出合格的 spec 文档</div>
 </div>
 </div>
@@ -36,7 +36,7 @@ layout: Default
 <span class="level-title">高级：能设计策略</span>
 </div>
 <div class="level-body">
-<div class="level-check">✓ 开发团队专属 Skill，沉淀最佳实践</div>
+<div class="level-check">✓ 开发团队Skill，沉淀最佳实践</div>
 <div class="level-check">✓ 能设计上下文策略</div>
 <div class="level-check">✓ 能指导他人使用 AI Coding</div>
 </div>
@@ -44,81 +44,106 @@ layout: Default
 
 </div>
 
-<div class="resources">
-<strong>学习资源指引：</strong>
-<ul>
-<li>Superpowers 完全指南（workspace/ai-coding/drafts/）</li>
-<li>OpenSpec 完全指南（workspace/ai-coding/drafts/）</li>
-<li>Claude Code 官方文档</li>
-</ul>
-</div>
-
 <style>
 .learning-path {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--spacing-md);
   margin: var(--spacing-md) 0;
+  height: calc(100% - 80px);
 }
+
 .level {
-  border-radius: var(--radius-md);
+  flex: 1;
+  position: relative;
+  border-radius: var(--radius-lg);
   padding: var(--spacing-md);
+  background: var(--color-bg-card);
   border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.level:nth-child(1) { background: var(--color-success-light); border-color: var(--color-success); }
-.level:nth-child(2) { background: var(--color-info-light); border-color: var(--color-info); }
-.level:nth-child(3) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
+
+/* 顶部色条 */
+.level::before {
+  content: '';
+  position: absolute;
+   left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+}
+
+.level:nth-child(1)::before { background: linear-gradient(90deg, var(--color-success) 0%, #38A169 100%); }
+.level:nth-child(2)::before { background: linear-gradient(90deg, var(--color-info) 0%, #4299E1 100%); }
+.level:nth-child(3)::before { background: linear-gradient(90deg, var(--color-accent-teal) 0%, #14B8A6 100%); }
+
 .level-header {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px dashed var(--color-border-light);
 }
+
 .level-num {
   font-family: var(--font-family-display);
-  width: 28px;
-  height: 28px;
-  border-radius: var(--radius-sm);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: var(--font-weight-semibold);
-  font-size: 14px;
-  background: var(--color-primary);
-  color: var(--color-bg-card);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
-.level:nth-child(1) .level-num { background: var(--color-success); }
-.level:nth-child(2) .level-num { background: var(--color-info); }
-.level:nth-child(3) .level-num { background: var(--color-accent-teal); }
+
+.level:nth-child(1) .level-num {
+  background: linear-gradient(135deg, var(--color-success) 0%, #38A169 100%);
+}
+.level:nth-child(2) .level-num {
+  background: linear-gradient(135deg, var(--color-info) 0%, #4299E1 100%);
+}
+.level:nth-child(3) .level-num {
+  background: linear-gradient(135deg, var(--color-accent-teal) 0%, #14B8A6 100%);
+}
+
 .level-title {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-card-title);
+  font-size: 20px;
   color: var(--color-text-primary);
 }
+
 .level-body {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: 12px;
 }
+
 .level-check {
-  font-size: var(--font-size-card-body);
+  position: relative;
+  font-size: 14px;
   color: var(--color-text-primary);
+  line-height: 1.5;
+  padding: 6px 10px;
+  border-radius: 6px;
 }
-.resources {
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-md);
-  background: var(--color-accent-orange-light);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-accent-orange);
-  font-size: var(--font-size-card-body);
+
+/* 彩色背景高亮 */
+.level:nth-child(1) .level-check {
+  background: var(--color-success-light);
 }
-.resources ul {
-  margin-top: var(--spacing-xs);
-  margin-left: var(--spacing-md);
+.level:nth-child(2) .level-check {
+  background: var(--color-info-light);
 }
-.resources li {
-  margin-bottom: var(--spacing-xs);
+.level:nth-child(3) .level-check {
+  background: var(--color-accent-teal-light);
 }
 </style>
 

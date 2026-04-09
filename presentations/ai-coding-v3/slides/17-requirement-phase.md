@@ -49,11 +49,11 @@ layout: Default
 
 <style>
 .stage-detail {
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
 .stage-header {
-  background: var(--color-success);
-  padding: var(--spacing-md);
+  background: #1B4332;
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-sm);
 }
@@ -64,29 +64,39 @@ layout: Default
   color: #FFFFFF;
 }
 .stage-flow {
-  font-size: var(--font-size-card-body);
+  font-size: var(--font-size-body);
   color: #F7FAFC;
-  margin-top: var(--spacing-xs);
+  margin-top: 4px;
 }
 .stage-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xs);
 }
 .stage-row {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  padding: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   background: var(--color-bg-subtle);
 }
 .row-label {
+  flex-shrink: 0;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: #1B4332;
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 .row-content {
+  flex: 1;
+  padding-top: 2px;
+  font-size: var(--font-size-body);
   color: var(--color-text-primary);
+  line-height: 1.4;
 }
 </style>
 
@@ -112,5 +122,5 @@ layout: Default
 
 **模板文件**：docs/requirements/prd-template.md
 
-这是需求阶段的定义。那么具体怎么用 AI 工具？让我们看下一页。
+这是需求阶段的定义。那么具体怎么用 AI 工具？
 -->
