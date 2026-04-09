@@ -29,6 +29,10 @@ src: ./slides/03-industry-trend.md
 src: ./slides/04-methodology.md
 ---
 
+---
+src: ./slides/04-harness-detail.md
+---
+
 <!-- Part 1: AI Coding 能力边界 -->
 ---
 src: ./slides/05-chapter1-section.md
@@ -170,9 +174,5 @@ src: ./slides/36-summary.md
 ---
 
 ---
-src: ./slides/37-self-study.md
----
-
----
-src: ./slides/38-qa.md
+src: ./slides/37-qa.md
 ---

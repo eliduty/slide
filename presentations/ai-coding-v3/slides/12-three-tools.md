@@ -69,11 +69,11 @@ layout: TwoCols
 <div class="collab-note">
 <div class="note-item">
 <span class="dot spec-dot"></span>
-<span>OpenSpec 管理流程规范</span>
+<span>OpenSpec 管理需求流程规范</span>
 </div>
 <div class="note-item">
 <span class="dot powers-dot"></span>
-<span>Superpowers 提供专项能力</span>
+<span>Superpowers 提供专项能力管开发流程规范</span>
 </div>
 <div class="note-item">
 <span class="dot engine-dot"></span>
@@ -277,7 +277,7 @@ layout: TwoCols
 
 **Superpowers：能力模块**
 
-它是一组由AI skill 组成的集合，专项能力：强制 TDD、brainstorm、系统化调试。这些是"专项技能"，让AI编程在特定场景下表现更好、输出高质量的代码。
+它是一组由AI skill 组成的集合，专项能力：gitworktree、子代理驱动开发、强制 TDD、brainstorm、系统化调试。这些是"专项技能"，让AI编程在特定场景下表现更好、输出高质量的代码。
 
 **协作关系**
 
