@@ -11,7 +11,7 @@ id: ai-coding-v3
 created: 2026-04-08
 updated: 2026-04-09
 tags: [ai, coding, productivity, sdd]
-slidesCount: 37
+slidesCount: 38
 estimatedTime: 75min
 status: draft
 src: ./slides/01-cover.md
@@ -153,22 +153,26 @@ src: ./slides/32-new-project.md
 
 <!-- Part 6: 标准化资产清单 -->
 ---
-src: ./slides/33-assets-list.md
+src: ./slides/33-chapter-section.md
 ---
 
 ---
-src: ./slides/34-assets-structure.md
+src: ./slides/34-assets-list.md
+---
+
+---
+src: ./slides/35-assets-structure.md
 ---
 
 <!-- Part 7: 总结 -->
 ---
-src: ./slides/35-summary.md
+src: ./slides/36-summary.md
 ---
 
 ---
-src: ./slides/36-self-study.md
+src: ./slides/37-self-study.md
 ---
 
 ---
-src: ./slides/37-qa.md
+src: ./slides/38-qa.md
 ---

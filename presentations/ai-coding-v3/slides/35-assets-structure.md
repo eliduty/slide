@@ -69,15 +69,13 @@ td:first-child {
 </style>
 
 <!--
-这是 skill 项目实际使用的完整目录结构。
+这是职业素养测评项目实际使用的完整目录结构。
 
-Monorepo 的核心优势：
+他采用的是Monorepo的管理方式。他的核心优势：
 - **apps/** 集中管理所有应用，每个应用有自己的 CLAUDE.md 和 openspec
 - **packages/** 共享代码，避免重复，领域层和基础设施层清晰分离
 - **docs/** 分层组织：architecture（架构）、requirements（PRD）、design（UI/UX）、standards（规范）、guides（指南）各自独立，易于查找
 - **openspec/** 功能规格管理，支持从提案到实现的完整追踪
 
-这套结构已经在 skill 项目验证，可直接复用。
-
-接下来是课后自学指引。
+这套结构已经在职业素养项目中进行了验证，可直接复用。熟悉ynedut-ui的伙伴应该可以发现，这套目录结构是一模一样的。
 -->

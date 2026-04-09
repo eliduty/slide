@@ -70,7 +70,7 @@ layout: Default
 .role-change {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
   margin-top: var(--spacing-md);
 }
 .change-item {
@@ -89,14 +89,14 @@ layout: Default
   font-weight: var(--font-weight-medium);
   padding: 4px 10px;
   border-radius: var(--radius-sm);
-  font-size: var(--font-size-card-meta);
+  font-size: 20px;
 }
 .from { background: var(--color-border); color: var(--color-text-secondary); }
 .to { background: var(--color-primary); color: var(--color-bg-card); }
 .arrow { color: var(--color-primary); font-size: var(--font-size-card-title); }
-.desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); margin-left: var(--spacing-sm); }
+.desc { font-size: 16px; color: var(--color-text-secondary); margin-left: var(--spacing-sm); }
 .key-ability {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-xl);
   padding: var(--spacing-md);
   background: #1A365D;
@@ -167,16 +167,6 @@ layout: Default
 **建立对AI输出的校准直觉**
 
 这是最重要的能力。你需要能识别出"AI 正在谄媚"的场景。当 AI 给出一个看起来很合理的建议时，要有直觉去判断：这个方向对不对？
-
-**能力培养路线图**
-
-我给大家规划了三个阶段的能力培养路径：
-
-- **初级**：理解四阶段工作流，能用 AI 完成单个任务。练习方式：用 AI 完成一个需求推演。
-- **中级**：能判断 AI 输出质量，能写出合格的 spec 文档。练习方式：独立完成一个完整的 OpenSpec 变更。
-- **高级**：能设计上下文策略，能开发团队专属 Skill。练习方式：为团队开发一个 Skill。
-
-培训结束后，建议你从初级开始，一步步提升。
 
 接下来，我们快速过一下常见场景的指引。
 -->

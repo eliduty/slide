@@ -132,7 +132,5 @@ layout: Default
 原则：拆分策略人来定，AI只执行
 关键：明确当前状态和目标状态
 
-具体操作方法，大家可以课后参考 workspace/ai-coding/drafts/ 下的资料。
-
 接下来是新项目启动的场景。
 -->
