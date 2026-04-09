@@ -4,128 +4,153 @@ layout: Default
 
 # 2.4 学习路径指引
 
-<div class="learning-grid">
+<div class="learning-path">
 
-<div class="learning-item beginner">
-<div class="learning-level">Level 1：入门</div>
-<div class="learning-content">
-<strong>掌握工具和工作流基础</strong>
+<div class="level">
+<div class="level-header">
+<span class="level-num">01</span>
+<span class="level-title">初级：会用工具</span>
+</div>
+<div class="level-body">
+<div class="level-check">✓ 了解工作流和安装相关工具</div>
+<div class="level-check">✓ 理解四阶段工作流</div>
+<div class="level-check">✓ 能用 AI 完成单个任务</div>
+</div>
+</div>
+
+<div class="level">
+<div class="level-header">
+<span class="level-num">02</span>
+<span class="level-title">中级：能判质量</span>
+</div>
+<div class="level-body">
+<div class="level-check">✓ 参考变更案例，独立完成简单变更</div>
+<div class="level-check">✓ 能判断 AI 输出是否符合业务预期</div>
+<div class="level-check">✓ 能写出合格的 spec 文档</div>
+</div>
+</div>
+
+<div class="level">
+<div class="level-header">
+<span class="level-num">03</span>
+<span class="level-title">高级：能设计策略</span>
+</div>
+<div class="level-body">
+<div class="level-check">✓ 开发团队专属 Skill，沉淀最佳实践</div>
+<div class="level-check">✓ 能设计上下文策略</div>
+<div class="level-check">✓ 能指导他人使用 AI Coding</div>
+</div>
+</div>
+
+</div>
+
+<div class="resources">
+<strong>学习资源指引：</strong>
 <ul>
-<li>安装配置 Claude Code</li>
-<li>理解四阶段工作流</li>
-<li>用 AI 完成单个任务</li>
+<li>Superpowers 完全指南（workspace/ai-coding/drafts/）</li>
+<li>OpenSpec 完全指南（workspace/ai-coding/drafts/）</li>
+<li>Claude Code 官方文档</li>
 </ul>
-</div>
-<div class="learning-goal">目标：能使用工具，理解流程</div>
-</div>
-
-<div class="learning-item intermediate">
-<div class="learning-level">Level 2：进阶</div>
-<div class="learning-content">
-<strong>建立判断能力和协作习惯</strong>
-<ul>
-<li>判断 AI 输出是否符合业务预期</li>
-<li>能写出合格的 spec 文档</li>
-<li>理解 propose/explore/apply/archive</li>
-</ul>
-</div>
-<div class="learning-goal">目标：能判断质量，能协作</div>
-</div>
-
-<div class="learning-item advanced">
-<div class="learning-level">Level 3：精通</div>
-<div class="learning-content">
-<strong>设计上下文策略，沉淀最佳实践</strong>
-<ul>
-<li>设计上下文工程策略</li>
-<li>开发团队专属 Skill</li>
-<li>沉淀团队最佳实践</li>
-</ul>
-</div>
-<div class="learning-goal">目标：能设计策略，能沉淀</div>
-</div>
-
-</div>
-
-<div class="action-call">
-<strong>建议：</strong>先完成 Level 1，在工作中实践 Level 2，积累经验后探索 Level 3
 </div>
 
 <style>
-.learning-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.learning-path {
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
+  margin: var(--spacing-md) 0;
 }
-.learning-item {
-  padding: var(--spacing-md);
+.level {
   border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
 }
-.learning-item.beginner { background: var(--color-success-light); border: 1px solid var(--color-success); }
-.learning-item.intermediate { background: var(--color-info-light); border: 1px solid var(--color-info); }
-.learning-item.advanced { background: var(--color-accent-teal-light); border: 1px solid var(--color-accent-teal); }
-.learning-level {
+.level:nth-child(1) { background: var(--color-success-light); border-color: var(--color-success); }
+.level:nth-child(2) { background: var(--color-info-light); border-color: var(--color-info); }
+.level:nth-child(3) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
+.level-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+.level-num {
+  font-family: var(--font-family-display);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-semibold);
+  font-size: 14px;
+  background: var(--color-primary);
+  color: var(--color-bg-card);
+}
+.level:nth-child(1) .level-num { background: var(--color-success); }
+.level:nth-child(2) .level-num { background: var(--color-info); }
+.level:nth-child(3) .level-num { background: var(--color-accent-teal); }
+.level-title {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-card-title);
   color: var(--color-text-primary);
-  margin-bottom: var(--spacing-sm);
 }
-.learning-content {
+.level-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+.level-check {
   font-size: var(--font-size-card-body);
   color: var(--color-text-primary);
 }
-.learning-content ul {
-  margin-top: var(--spacing-xs);
-  margin-left: var(--spacing-md);
-}
-.learning-goal {
-  font-size: var(--font-size-card-meta);
-  color: var(--color-text-secondary);
-  margin-top: var(--spacing-sm);
-  padding-top: var(--spacing-sm);
-  border-top: 1px solid var(--color-border);
-}
-.action-call {
+.resources {
   margin-top: var(--spacing-lg);
   padding: var(--spacing-md);
   background: var(--color-accent-orange-light);
   border-radius: var(--radius-md);
+  border: 1px solid var(--color-accent-orange);
   font-size: var(--font-size-card-body);
-  color: var(--color-text-primary);
+}
+.resources ul {
+  margin-top: var(--spacing-xs);
+  margin-left: var(--spacing-md);
+}
+.resources li {
+  margin-bottom: var(--spacing-xs);
 }
 </style>
 
 <!--
-学习路径分三级：
+学习 AI Coding 需要一个循序渐进的过程，我把它分为三个阶段。
 
-**Level 1：入门**
+**初级：会用工具**
 
-掌握工具和工作流基础。重点是：
-- 安装配置 Claude Code
+这个阶段的目标是入门。你需要：
+- 了解工作流和安装相关工具
 - 理解四阶段工作流
-- 用 AI 完成单个任务
+- 能用 AI 完成单个任务
 
-目标：能用工具，理解流程。
+**中级：能判质量**
 
-**Level 2：进阶**
-
-建立判断能力和协作习惯。重点是：
-- 判断 AI 输出是否符合业务预期
+这个阶段的目标是独立工作。你需要：
+- 参考变更案例，独立完成简单变更
+- 能判断 AI 输出是否符合业务预期
 - 能写出合格的 spec 文档
-- 理解 propose/explore/apply/archive 工作流
 
-目标：能判断质量，能协作。
+**高级：能设计策略**
 
-**Level 3：精通**
+这个阶段的目标是沉淀和分享。你需要：
+- 开发团队专属 Skill，沉淀最佳实践
+- 能设计上下文策略
+- 能指导他人使用 AI Coding
 
-设计上下文策略，沉淀最佳实践。重点是：
-- 设计上下文工程策略
-- 开发团队专属 Skill
-- 沉淀团队最佳实践
+**学习资源**
 
-目标：能设计策略，能沉淀。
+- Superpowers 完全指南（workspace/ai-coding/drafts/）
+- OpenSpec 完全指南（workspace/ai-coding/drafts/）
+- Claude Code 官方文档
 
-**建议**：先完成 Level 1，在工作中实践 Level 2，积累经验后探索 Level 3。
+根据自己的水平，选择合适的学习路径。
 -->

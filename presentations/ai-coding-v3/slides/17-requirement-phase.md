@@ -111,4 +111,6 @@ layout: Default
 **进入下一阶段条件**：需求评审通过
 
 **模板文件**：docs/requirements/prd-template.md
+
+这是需求阶段的定义。那么具体怎么用 AI 工具？让我们看下一页。
 -->

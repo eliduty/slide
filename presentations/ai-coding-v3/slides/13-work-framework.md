@@ -4,121 +4,101 @@ layout: Default
 
 # 2.3 工作开展框架
 
-<div class="workflow-chain">
-
-<div class="chain-stage">
-<div class="stage-num">需求阶段</div>
-<div class="stage-tool">Superpowers brainstorm</div>
-<div class="stage-action">精炼需求，避免理解偏差</div>
+<div class="workflow-diagram">
+<pre>
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   需求阶段                                                   │
+│   └── Superpowers brainstorm 精炼需求                       │
+│                    ↓                                        │
+│   设计阶段                                                   │
+│   └── OpenSpec explore → propose → 评审                      │
+│                    ↓                                        │
+│   环境规范阶段                                               │
+│   └── CLAUDE.md + .claude/ 配置上下文                        │
+│                    ↓                                        │
+│   实现阶段                                                   │
+│   └── OpenSpec apply + Superpowers TDD                      │
+│                    ↓                                        │
+│   收尾阶段                                                   │
+│   └── OpenSpec archive → E2E测试、人工验收                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+</pre>
 </div>
 
-<div class="chain-arrow">↓</div>
+<div class="tools-table">
 
-<div class="chain-stage">
-<div class="stage-num">设计阶段</div>
-<div class="stage-tool">OpenSpec explore → propose</div>
-<div class="stage-action">生成规范文档，可评审</div>
-</div>
-
-<div class="chain-arrow">↓</div>
-
-<div class="chain-stage">
-<div class="stage-num">环境规范阶段</div>
-<div class="stage-tool">CLAUDE.md + .claude/</div>
-<div class="stage-action">配置上下文，让 AI 理解项目</div>
-</div>
-
-<div class="chain-arrow">↓</div>
-
-<div class="chain-stage">
-<div class="stage-num">实现阶段</div>
-<div class="stage-tool">OpenSpec apply + Superpowers TDD</div>
-<div class="stage-action">按规范执行，强制测试</div>
-</div>
-
-<div class="chain-arrow">↓</div>
-
-<div class="chain-stage">
-<div class="stage-num">收尾阶段</div>
-<div class="stage-tool">OpenSpec archive</div>
-<div class="stage-action">归档沉淀，可追溯</div>
-</div>
+| 阶段 | 核心工具 | 一句话作用 |
+|:---:|:---|:---|
+| 需求 | brainstorm | 精炼需求，避免理解偏差 |
+| 设计 | propose/explore | 生成规范文档，可评审 |
+| 环境规范 | CLAUDE.md | 让 AI 理解项目上下文 |
+| 实现 | apply + TDD | 按规范执行，强制测试 |
+| 收尾 | archive | 归档沉淀，可追溯 |
 
 </div>
 
 <style>
-.workflow-chain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-xs);
-  margin-top: var(--spacing-md);
-}
-.chain-stage {
-  padding: var(--spacing-sm) var(--spacing-md);
+.workflow-diagram {
+  background: var(--color-bg-subtle);
+  padding: var(--spacing-md);
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  text-align: center;
-  min-width: 400px;
+  margin-bottom: var(--spacing-md);
 }
-.chain-stage:nth-child(1) { background: var(--color-success-light); border-color: var(--color-success); }
-.chain-stage:nth-child(3) { background: var(--color-info-light); border-color: var(--color-info); }
-.chain-stage:nth-child(5) { background: var(--color-accent-teal-light); border-color: var(--color-accent-teal); }
-.chain-stage:nth-child(7) { background: var(--color-warning-light); border-color: var(--color-warning); }
-.chain-stage:nth-child(9) { background: var(--color-accent-orange-light); border-color: var(--color-accent-orange); }
-.stage-num {
-  font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-card-title);
+.workflow-diagram pre {
+  font-family: var(--font-family-code);
+  font-size: 12px;
+  line-height: 1.5;
   color: var(--color-text-primary);
+  text-align: center;
 }
-.stage-tool {
-  font-size: var(--font-size-card-body);
-  color: var(--color-primary);
+.tools-table {
+  font-size: 14px;
+}
+.tools-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tools-table th {
+  background: var(--color-primary);
+  color: var(--color-bg-card);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  text-align: left;
   font-weight: var(--font-weight-medium);
 }
-.stage-action {
-  font-size: var(--font-size-card-meta);
-  color: var(--color-text-secondary);
+.tools-table td {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-bottom: 1px solid var(--color-border);
 }
-.chain-arrow {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-heading);
+.tools-table tr:nth-child(even) {
+  background: var(--color-bg-subtle);
 }
 </style>
 
 <!--
-这是从需求到交付的完整工具链路：
+这是从需求到交付的完整工具链路图。
 
 **需求阶段**
-
-工具：Superpowers brainstorm
-作用：精炼需求，避免理解偏差
-产出：结构化需求描述
+- 使用 Superpowers brainstorm 精炼需求
+- 把模糊的想法变成结构化的描述
 
 **设计阶段**
-
-工具：OpenSpec explore → propose
-作用：生成规范文档，可评审
-产出：proposal + design + tasks + specs
+- 使用 OpenSpec explore 探索方案
+- 使用 propose 生成规范文档
+- 经过评审后再进入下一阶段
 
 **环境规范阶段**
-
-工具：CLAUDE.md + .claude/ 配置
-作用：让 AI 理解项目上下文
-产出：规则文件、上下文配置
+- 配置 CLAUDE.md 让 AI 理解项目
+- 配置 .claude/ 目录下的规则和技能
 
 **实现阶段**
-
-工具：OpenSpec apply + Superpowers TDD
-作用：按规范执行，强制测试
-产出：代码 + 测试 + 文档
+- 使用 OpenSpec apply 按规范执行
+- 配合 Superpowers TDD 强制测试驱动
 
 **收尾阶段**
+- 使用 OpenSpec archive 归档变更
+- 进行 E2E 测试和人工验收
 
-工具：OpenSpec archive
-作用：归档沉淀，可追溯
-产出：归档的变更记录
-
-这个框架就是" Harness"的具体体现——每一步都有明确的工具和产出。
+每个阶段都有对应的工具和明确的产出，形成完整的闭环。
 -->

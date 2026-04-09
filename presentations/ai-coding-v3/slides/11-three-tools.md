@@ -118,9 +118,11 @@ OpenSpec            Superpowers
 
 **Superpowers：能力模块**
 
-它是一组专项能力：强制 TDD、brainstorm、系统化调试。这些是"专项技能"，让 Claude Code 在特定场景下表现更好。
+它是一组由AI skill 组成的集合，专项能力：强制 TDD、brainstorm、系统化调试。这些是"专项技能"，让AI编程在特定场景下表现更好、输出高质量的代码。
 
 **协作关系**
 
 OpenSpec 和 Superpowers 都"挂"在 Claude Code 上。OpenSpec 管流程，Superpowers 管能力，Claude Code 管执行。
+
+这三个工具下来，可能还需要大家花些时间去深入的了解。
 -->

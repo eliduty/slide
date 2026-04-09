@@ -82,4 +82,8 @@ layout: Default
 - **初级**：阅读 `docs/guides/openspec-superpowers-workflow.md`，理解四阶段流程。
 - **中级**：参考 `openspec/changes/admin-role-authorization/` 案例，独立完成一个简单变更。
 - **高级**：开发一个团队专属 Skill，沉淀你们的最佳实践。
+
+培训结束后，建议你从初级开始，逐步进阶。
+
+接下来是今天的总结。
 -->

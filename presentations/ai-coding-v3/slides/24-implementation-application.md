@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 4.3 实现阶段——工具应用
+# 3.8 实现阶段——工具应用
 
 <div class="app-grid">
 
@@ -72,26 +72,26 @@ layout: Default
   color: var(--color-text-secondary);
 }
 .warning-note {
-  margin-top: var(--spacing-md);
-  padding: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
   background: var(--color-warning-light);
   border-radius: var(--radius-md);
   border-left: 4px solid var(--color-warning);
-  font-size: var(--font-size-card-body);
+  font-size: 15px;
   color: var(--color-text-primary);
 }
 .tool-tip {
-  margin-top: var(--spacing-md);
-  padding: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
   background: var(--color-accent-teal-light);
   border-radius: var(--radius-md);
-  font-size: var(--font-size-card-body);
+  font-size: 15px;
   color: var(--color-text-primary);
 }
 </style>
 
 <!--
-实现阶段的工具应用：
+实现阶段具体怎么用 AI 工具？
 
 **01. 代码生成**
 
@@ -114,4 +114,6 @@ layout: Default
 测试能跑通，不代表它真正验证了业务逻辑。你必须检查：测试用例是否覆盖了关键业务场景？断言是否正确？
 
 **配合工具**：OpenSpec apply + Superpowers TDD——按规范执行，强制测试。
+
+除了各阶段的具体应用，还有一些工作贯穿整个流程。让我们看下一页。
 -->

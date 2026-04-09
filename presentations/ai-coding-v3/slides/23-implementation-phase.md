@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 3.5 实现阶段
+# 3.7 实现阶段
 
 <div class="stage-detail">
 
@@ -115,4 +115,6 @@ layout: Default
 **配合工具**：OpenSpec apply + Superpowers TDD
 
 Superpowers TDD 会强制要求先生成测试再生成代码，确保测试覆盖。
+
+这是实现阶段的定义。具体怎么用 AI 工具？让我们看下一页。
 -->

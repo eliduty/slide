@@ -37,36 +37,36 @@ Agent 是"人"，MCP 是"大脑+神经"，Memory 是"记忆"，Skills 是"手脚
 
 <style>
 .concept-header {
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   background: #1A365D;
   border-radius: var(--radius-md);
   color: #FFFFFF;
-  font-size: var(--font-size-card-body);
+  font-size: 15px;
   text-align: center;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 .concept-diagram {
   background: var(--color-bg-subtle);
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   border-radius: var(--radius-md);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 .concept-diagram pre {
   font-family: var(--font-family-code);
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.5;
   color: var(--color-text-primary);
   text-align: center;
 }
 .config-location {
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   background: var(--color-accent-teal-light);
   border-radius: var(--radius-md);
-  font-size: var(--font-size-card-body);
+  font-size: 14px;
 }
 .config-location pre {
   font-family: var(--font-family-code);
-  font-size: 13px;
+  font-size: 12px;
   margin-top: var(--spacing-xs);
   color: var(--color-text-primary);
 }
@@ -93,4 +93,6 @@ Agent 是"人"，MCP 是"大脑+神经"，Memory 是"记忆"，Skills 是"手脚
 - `skills/`：团队专属技能
 - `memory/`：跨会话记忆
 - `rules/`：行为约束
+
+理解了概念体系，接下来我们看看具体如何开展工作。
 -->

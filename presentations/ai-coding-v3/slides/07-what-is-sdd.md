@@ -2,10 +2,10 @@
 layout: Default
 ---
 
-# 1.2 什么是规格驱动开发（SDD）
+# 1.2 Spec-Driven Development（SDD）
 
 <div class="sdd-definition">
-<div class="sdd-title">一句话定义</div>
+<div class="sdd-title">一句话定义：规格驱动开发</div>
 <div class="sdd-content">先定义"是什么"，再定义"怎么做"</div>
 </div>
 
@@ -135,4 +135,6 @@ layout: Default
 - 规格文档是人机协作的"契约"——人先让 AI 生成规格，评审后再执行
 
 简单说：**对话驱动是"边说边做"，规格驱动是"先说清楚再做"。**
+
+那么，为什么我们需要规格驱动？它具体解决了什么问题？
 -->

@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 3.3 设计阶段
+# 3.4 设计阶段
 
 <div class="stage-detail">
 
@@ -119,4 +119,6 @@ layout: Default
 **进入下一阶段条件**：技术评审通过
 
 **模板文件**：openspec/changes/ 目录结构
+
+这是设计阶段的定义。具体怎么用 AI 工具？让我们看下一页。
 -->
