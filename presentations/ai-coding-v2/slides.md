@@ -1,6 +1,6 @@
 ---
 theme: ../../packages/slidev-theme-skill-ui
-title: 研发 AI Coding 工作流培训
+title: 研发 AI Coding 工作流培训 v2
 author: eliduty
 aspectRatio: 16/9
 

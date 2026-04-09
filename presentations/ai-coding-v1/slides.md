@@ -1,7 +1,7 @@
 ---
 # Slidev 配置
 theme: ../../packages/slidev-theme-skill-ui
-title: AI Coding 实践分享
+title: AI Coding 实践分享 v1
 author: eliduty
 aspectRatio: 16/9
 colorSchema: auto
