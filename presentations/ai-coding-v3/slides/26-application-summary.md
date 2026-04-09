@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 3.6 贯穿全局应用总结
+# 3.10 贯穿全局应用总结
 
 <div class="summary-grid">
 

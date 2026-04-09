@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 1.2 Spec-Driven Development（SDD）
+# 1.2 什么是规格驱动开发（SDD）
 
 <div class="sdd-definition">
 <div class="sdd-title">一句话定义：规格驱动开发</div>

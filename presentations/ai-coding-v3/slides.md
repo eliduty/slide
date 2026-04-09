@@ -174,11 +174,11 @@ src: ./slides/37-assets-structure.md
 
 <!-- Part 7: 总结 -->
 ---
-src: ./slides/38-self-study.md
+src: ./slides/38-summary.md
 ---
 
 ---
-src: ./slides/39-summary.md
+src: ./slides/39-self-study.md
 ---
 
 ---

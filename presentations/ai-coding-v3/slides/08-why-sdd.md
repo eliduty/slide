@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 1.3 为什么需要规格驱动
+# 1.3 为什么需要SDD
 
 <div class="reason-grid">
 
