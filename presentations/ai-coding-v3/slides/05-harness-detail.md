@@ -12,7 +12,7 @@ layout: two-cols-header
 <div class="goal-icon">🎯</div>
 <h3 class="goal-title">核心理念</h3>
 <p class="goal-desc">
-    给你一套完整的 <strong>Harness</strong>——让 AI 在规范约束下执行任务，输出<strong>可预测、可追溯、可验证</strong>的结果
+   <strong>Harness</strong>——让 AI 在规范约束下执行任务，输出<strong>可预测、可追溯、可验证</strong>的结果
   </p>
 </div>
 
@@ -46,12 +46,12 @@ layout: two-cols-header
 </div>
 
 <style>
-/* 左侧目标卡片 */
+/* 左侧目标卡片 - 优化紧凑布局 */
 .goal-card {
   background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-bg-card) 100%);
   border: 2px solid var(--color-primary);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-lg);
   text-align: center;
   height: 100%;
   display: flex;
@@ -61,34 +61,35 @@ layout: two-cols-header
 }
 
 .goal-icon {
-  font-size: 48px;
-  margin-bottom: var(--spacing-md);
+  font-size: 40px;
+  margin-bottom: var(--spacing-sm);
 }
 
 .goal-title {
-  font-size: var(--font-size-section-title);
+  font-size: 40px;
   font-weight: 600;
   color: var(--color-text-primary);
-  margin: 0 0 var(--spacing-md) 0;
+  margin: 0 0 var(--spacing-sm) 0;
 }
 
 .goal-desc {
-  font-size: var(--font-size-body);
+  font-size: calc(var(--font-size-body-sm) * 1.05);
   color: var(--color-text-secondary);
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
 .goal-desc strong {
   color: var(--color-primary);
+  font-weight: 600;
 }
 
-/* 右侧 Harness 详情 */
+/* 右侧 Harness 详情 - 优化紧凑布局 */
 .harness-detail {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-sm);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -98,15 +99,15 @@ layout: two-cols-header
   font-size: var(--font-size-card-title);
   font-weight: 600;
   color: var(--color-text-primary);
-  margin: 0 0 var(--spacing-lg) 0;
-  padding-bottom: var(--spacing-sm);
+  margin: 0 0 var(--spacing-md) 0;
+  padding-bottom: var(--spacing-xs);
   border-bottom: 2px solid var(--color-bg-page);
 }
 
 .detail-grid {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
   flex: 1;
   justify-content: center;
 }
@@ -114,10 +115,10 @@ layout: two-cols-header
 .detail-item {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
+  gap: var(--spacing-sm);
+  padding: 10px var(--spacing-sm);
   background: var(--color-bg-page);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   transition: all var(--transition-fast);
 }
 
@@ -127,32 +128,34 @@ layout: two-cols-header
 }
 
 .item-icon {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: var(--item-color);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 20px;
   flex-shrink: 0;
 }
 
 .item-content {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  flex: 1;
 }
 
 .item-name {
   font-weight: 600;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-body-sm);
   color: var(--color-text-primary);
 }
 
 .item-desc {
-  font-size: var(--font-size-body-sm);
+  font-size: calc(var(--font-size-body-sm) * 0.9);
   color: var(--color-text-secondary);
+  line-height: 1.4;
 }
 </style>
 

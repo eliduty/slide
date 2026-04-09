@@ -83,8 +83,27 @@ layout: Default
 
 .evo-card.current {
   border-color: var(--color-primary);
-  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-bg-card) 100%);
-  box-shadow: var(--shadow-md);
+  border-width: 2px;
+  background: linear-gradient(135deg,
+    rgba(var(--color-primary-rgb, 67, 97, 238), 0.12) 0%,
+    rgba(var(--color-primary-rgb, 67, 97, 238), 0.05) 100%);
+  box-shadow:
+    0 4px 12px rgba(var(--color-primary-rgb, 67, 97, 238), 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.evo-card.current .evo-name {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.evo-card.current .evo-label {
+  color: var(--color-text-primary);
+}
+
+.evo-card.current .evo-focus {
+  color: var(--color-text-primary);
+  font-weight: 500;
 }
 
 .evo-header {
@@ -110,9 +129,11 @@ layout: Default
 }
 
 .evo-card.current .evo-badge {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: white;
+  background: #10b981;
+  border-color: #10b981;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
 }
 
 .evo-title {
@@ -152,32 +173,36 @@ layout: Default
 
 .evo-problem {
   font-size: 13px;
-  color: var(--color-warning);
-  background: var(--color-warning-light);
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.15);
   padding: var(--spacing-sm);
   border-radius: var(--radius-md);
-  border-left: 3px solid var(--color-warning);
+  border-left: 3px solid #f59e0b;
+  font-weight: 500;
 }
 
 .evo-success {
   font-size: 13px;
-  color: var(--color-success);
-  background: var(--color-success-light);
+  color: #6ee7b7;
+  background: rgba(16, 185, 129, 0.15);
   padding: var(--spacing-sm);
   border-radius: var(--radius-md);
-  border-left: 3px solid var(--color-success);
+  border-left: 3px solid #10b981;
+  font-weight: 500;
 }
 
 .current-tag {
   position: absolute;
   top: -12px;
   right: 16px;
-  background: var(--color-primary);
-  color: white;
+  background: #10b981;
+  color: #ffffff;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 4px 12px;
   border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  letter-spacing: 0.5px;
 }
 
 .evo-arrow {
