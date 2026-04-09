@@ -11,7 +11,7 @@ id: ai-coding-v3
 created: 2026-04-08
 updated: 2026-04-09
 tags: [ai, coding, productivity, sdd]
-slidesCount: 40
+slidesCount: 39
 estimatedTime: 75min
 status: draft
 src: ./slides/01-cover.md
@@ -56,11 +56,11 @@ src: ./slides/10-chapter2-section.md
 ---
 
 ---
-src: ./slides/11-three-tools.md
+src: ./slides/11-agent-mcp-skill.md
 ---
 
 ---
-src: ./slides/12-agent-mcp-skill.md
+src: ./slides/12-three-tools.md
 ---
 
 ---
@@ -98,89 +98,85 @@ src: ./slides/19-design-phase.md
 src: ./slides/20-design-application.md
 ---
 
----
-src: ./slides/21-design-application-part2.md
----
-
 <!-- 环境规范阶段 -->
 ---
-src: ./slides/22-env-phase.md
+src: ./slides/21-env-phase.md
 ---
 
 <!-- 实现阶段 -->
 ---
-src: ./slides/23-implementation-phase.md
+src: ./slides/22-implementation-phase.md
 ---
 
 ---
-src: ./slides/24-implementation-application.md
+src: ./slides/23-implementation-application.md
 ---
 
 <!-- 贯穿全局 -->
 ---
-src: ./slides/25-global-application.md
+src: ./slides/24-global-application.md
 ---
 
 ---
-src: ./slides/26-application-summary.md
+src: ./slides/25-application-summary.md
 ---
 
 ---
-src: ./slides/27-phase-summary.md
+src: ./slides/26-phase-summary.md
 ---
 
 <!-- Part 4: 对现有工作的影响 -->
 ---
-src: ./slides/28-chapter4-section.md
+src: ./slides/27-chapter4-section.md
 ---
 
 ---
-src: ./slides/29-pm-impact.md
+src: ./slides/28-pm-impact.md
 ---
 
 ---
-src: ./slides/30-sdeqa-impact.md
+src: ./slides/29-sdeqa-impact.md
 ---
 
 ---
-src: ./slides/31-review-impact.md
+src: ./slides/30-review-impact.md
 ---
 
 ---
-src: ./slides/32-human-work-adjust.md
+src: ./slides/31-human-work-adjust.md
 ---
 
 <!-- Part 5: 常见场景指引 -->
 ---
-src: ./slides/33-chapter6-section.md
+src: ./slides/32-chapter6-section.md
 ---
 
 ---
-src: ./slides/34-legacy-project.md
+src: ./slides/33-legacy-project.md
 ---
 
 ---
-src: ./slides/35-new-project.md
+src: ./slides/34-new-project.md
 ---
 
 <!-- Part 6: 标准化资产清单 -->
 ---
-src: ./slides/36-assets-list.md
+src: ./slides/35-assets-list.md
 ---
 
 ---
-src: ./slides/37-assets-structure.md
+src: ./slides/36-assets-structure.md
 ---
 
 <!-- Part 7: 总结 -->
 ---
-src: ./slides/38-summary.md
+src: ./slides/37-summary.md
 ---
 
 ---
-src: ./slides/39-self-study.md
+src: ./slides/38-self-study.md
 ---
 
 ---
-src: ./slides/40-qa.md
+src: ./slides/39-qa.md
 ---

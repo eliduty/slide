@@ -2,7 +2,7 @@
 layout: Default
 ---
 
-# 2.2 Agent MCP Skill Memory Rule 概念体系
+# 2.1 Agent MCP Skill Memory Rule 概念体系
 
 <div class="concept-header">
 <strong>一句话理解六者关系：</strong>

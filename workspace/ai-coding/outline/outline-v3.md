@@ -102,27 +102,7 @@ Prompt Engineering → Context Engineering → Harness Engineering
 
 ### Part 2: AI Coding 工具与协作框架（10分钟）
 
-**09. 三大工具概览**
-
-- **工具定位一句话**：
-  | 工具          | 一句话定位                                   |
-  | ----------- | --------------------------------------- |
-  | Claude Code | 执行引擎——能读文件、跑命令、写代码、自主验证                 |
-  | OpenSpec    | 规格管理——propose/explore/apply/archive 工作流 |
-  | Superpowers | 能力模块——强制执行 TDD、brainstorm、系统化调试         |
-- **协作关系图**：
-  ```
-  Claude Code（执行引擎）
-       ↑
-  OpenSpec ←──→ Superpowers
-  （规格管理）    （能力模块）
-  ```
-- **学习资源指引**：
-  - Superpowers 完全指南（workspace/ai-coding/drafts/）
-  - OpenSpec 完全指南（workspace/ai-coding/drafts/）
-  - Claude Code 官方文档
-
-**10. Agent MCP Skill Memory Rule 概念体系**
+**09. Agent MCP Skill Memory Rule 概念体系**
 
 - **六者关系一句话**：
   ```
@@ -147,6 +127,26 @@ Prompt Engineering → Context Engineering → Harness Engineering
   ├── memory/     ← 跨会话记忆
   └── rules/      ← 行为约束
   ```
+
+**10. 三大工具概览**
+
+- **工具定位一句话**：
+  | 工具          | 一句话定位                                   |
+  | ----------- | --------------------------------------- |
+  | Claude Code | 执行引擎——能读文件、跑命令、写代码、自主验证                 |
+  | OpenSpec    | 规格管理——propose/explore/apply/archive 工作流 |
+  | Superpowers | 能力模块——强制执行 TDD、brainstorm、系统化调试         |
+- **协作关系图**：
+  ```
+  Claude Code（执行引擎）
+       ↑
+  OpenSpec ←──→ Superpowers
+  （规格管理）    （能力模块）
+  ```
+- **学习资源指引**：
+  - Superpowers 完全指南（workspace/ai-coding/drafts/）
+  - OpenSpec 完全指南（workspace/ai-coding/drafts/）
+  - Claude Code 官方文档
 
 **11. 工作开展框架**
 
@@ -475,10 +475,10 @@ team-ai-coding-toolkit/
 | Part 0: 开场       | 4 页        |
 | Part 1: 背景铺垫     | 4 页        |
 | Part 2: 工具与协作框架  | 4 页        |
-| Part 3: 四阶段工作流程  | 7 页        |
+| Part 3: 四阶段工作流程  | 6 页        |
 | Part 4: 对现有工作的影响 | 4 页        |
 | Part 5: 常见场景指引   | 2 页        |
 | Part 6: 标准化资产清单  | 2 页        |
 | Part 7: 总结       | 3 页        |
-| **合计**           | **约 30 页** |
+| **合计**           | **约 39 页** |
 
