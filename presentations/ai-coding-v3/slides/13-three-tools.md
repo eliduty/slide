@@ -17,7 +17,7 @@ layout: TwoCols
 <div class="tool-item">
 <div class="tool-name">OpenSpec</div>
 <div class="tool-role">规格管理</div>
-<div class="tool-desc">propose → explore → apply → archive</div>
+<div class="tool-desc">explore → propose → apply → archive</div>
 </div>
 
 <div class="tool-item">
@@ -269,7 +269,7 @@ layout: TwoCols
 
 **OpenSpec：规格管理**
 
-它提供了一套完整的工作流：propose → explore → apply → archive。每个阶段都有明确的产出物，确保规格驱动开发的落地。
+它提供了一套完整的工作流：explore → propose →  apply → archive。每个阶段都有明确的产出物，确保规格驱动开发的落地。
 
 同类型的工具还有 Github的Spec Kit-重量级、AWS的 kiro-锁定IDE。
 
