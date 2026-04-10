@@ -61,7 +61,7 @@ layout: Default
 }
 .reason-title {
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
+  font-weight: bold;
   font-size: var(--font-size-card-title);
   color: var(--color-text-primary);
   margin-bottom: var(--spacing-xs);

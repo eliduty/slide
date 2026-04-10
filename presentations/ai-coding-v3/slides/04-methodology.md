@@ -15,7 +15,7 @@ layout: Default
 </div>
 </div>
 <div class="evo-body">
-<div class="evo-focus">关注「如何写更好的指令」</div>
+<div class="evo-focus">如何写更好的指令</div>
 <div class="evo-problem">问题：上下文不足仍会失败</div>
 </div>
 </div>
@@ -31,7 +31,7 @@ layout: Default
 </div>
 </div>
 <div class="evo-body">
-<div class="evo-focus">关注「如何筛选精准上下文」</div>
+<div class="evo-focus">如何筛选精准上下文</div>
 <div class="evo-problem">问题：管理依赖人工，难以复用</div>
 </div>
 </div>
@@ -42,12 +42,12 @@ layout: Default
 <div class="evo-header">
 <div class="evo-badge">3</div>
 <div class="evo-title">
-<div class="evo-name">Harness Engineering</div>
+<div class="evo-name" style="color:#10b981">Harness Engineering</div>
 <div class="evo-label highlight">编排工程</div>
 </div>
 </div>
 <div class="evo-body">
-<div class="evo-focus">关注「如何工程化约束 AI」</div>
+<div class="evo-focus">如何工程化约束 AI</div>
 <div class="evo-success">结果：模板+规则+工作流可复用体系</div>
 </div>
 <div class="current-tag">当前阶段</div>

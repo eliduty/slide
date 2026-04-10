@@ -71,9 +71,10 @@ layout: Default
 .dependent .level { background: var(--color-text-muted); color: var(--color-bg-card); }
 .title {
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-card-title);
+  font-weight: blod;
+  font-size: 24px;
   color: var(--color-text-primary);
+  margin:14px 0
 }
 .desc { font-size: var(--font-size-card-body); color: var(--color-text-secondary); }
 .condition { font-size: var(--font-size-card-meta); color: var(--color-text-muted); margin-top: var(--spacing-xs); }
@@ -93,7 +94,7 @@ layout: Default
 
 **第一类：代码生成——强**
 
-这是 AI 最擅长的领域。比如生成 Vue 组件、写接口实现、配置文件。只要你给的规范清晰，输出质量是非常高的。在项目中，我们大量使用 AI 生成前端组件，效率提升非常明显，实际上我们职业素养的项目的代码是100% AI生成。
+这是 AI 最擅长的领域。比如，写文档、生成 Vue 组件、写接口实现、配置文件。只要你给的规范清晰，输出质量是非常高的。在项目中，我们大量使用 AI 生成前端组件，效率提升非常明显，实际上我们职业素养的项目的代码是100% AI生成。
 
 **第二类：架构决策——需要人引导**
 

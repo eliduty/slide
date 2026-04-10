@@ -62,8 +62,8 @@ layout: Default
 }
 .phase-title {
   font-family: var(--font-family-display);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-card-title);
+  font-weight: blod;
+  font-size: 26px;
   color: var(--color-text-primary);
   margin-bottom: var(--spacing-xs);
 }
@@ -93,7 +93,7 @@ layout: Default
 </style>
 
 <!--
-了解了问题的根源，我们再来看看行业正在经历的变化。
+当前行业也正在经历，从模型崇拜到工程落地。
 
 **2022-2023：模型崇拜时代**
 

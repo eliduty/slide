@@ -39,7 +39,7 @@ layout: two-cols-header
 <div class="item-icon" style="--item-color: #F59E0B;">⚙️</div>
 <div class="item-content">
 <div class="item-name">工作流</div>
-<div class="item-desc">propose → explore → apply → archive</div>
+<div class="item-desc">explore → propose →  apply → archive</div>
 </div>
 </div>
 </div>
@@ -165,7 +165,7 @@ layout: two-cols-header
 这套 Harness 包含三部分：
 - 模板：PRD、design、tasks 等标准化文档格式
 - 规则：CLAUDE.md + rules 约束文件
-- 工作流：propose → explore → apply → archive 四步流程
+- 工作流：explore →propose →  apply → archive 四步流程
 
 接下来，我们正式进入第一部分：AI Coding 的能力边界。
 -->
