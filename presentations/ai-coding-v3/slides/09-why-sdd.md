@@ -7,25 +7,25 @@ layout: Default
 <div class="reason-grid">
 
 <div class="reason-item">
-<div class="reason-num">01</div>
+<div class="reason-num reason-num-1">01</div>
 <div class="reason-title">意图清晰化</div>
 <div class="reason-desc">规格文档把模糊的想法变成明确的定义，AI 不再猜测</div>
 </div>
 
 <div class="reason-item">
-<div class="reason-num">02</div>
+<div class="reason-num reason-num-2">02</div>
 <div class="reason-title">知识可沉淀</div>
 <div class="reason-desc">规格文档可以保存、复用、传承，不再是"一次性对话"</div>
 </div>
 
 <div class="reason-item">
-<div class="reason-num">03</div>
+<div class="reason-num reason-num-3">03</div>
 <div class="reason-title">协作可追溯</div>
 <div class="reason-desc">团队成员可以看到 AI 当时的理解，知道为什么这样做</div>
 </div>
 
 <div class="reason-item">
-<div class="reason-num">04</div>
+<div class="reason-num reason-num-4">04</div>
 <div class="reason-title">质量可验证</div>
 <div class="reason-desc">有了规格，就有了验收标准，AI 输出可以对照检查</div>
 </div>
@@ -56,8 +56,19 @@ layout: Default
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-heading);
-  color: var(--color-primary);
   min-width: 40px;
+}
+.reason-num-1 {
+  color: #C05621;
+}
+.reason-num-2 {
+  color: #0D9488;
+}
+.reason-num-3 {
+  color: #E11D48;
+}
+.reason-num-4 {
+  color: #B7791F;
 }
 .reason-title {
   font-family: var(--font-family-display);
