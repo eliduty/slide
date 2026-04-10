@@ -60,7 +60,7 @@ src: ./slides/11-chapter2-section.md
 ---
 
 ---
-src: ./slides/12-agent-mcp-skill.md
+src: ./slides/12-ai-agent-components.md
 ---
 
 ---

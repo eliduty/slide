@@ -102,7 +102,7 @@ Prompt Engineering → Context Engineering → Harness Engineering
 
 ### Part 2: AI Coding 工具与协作框架（10分钟）
 
-**09. Agent MCP Skill Memory Rule 概念体系**
+**09. AI Agent 核心组件**
 
 - **六者关系一句话**：
   ```
